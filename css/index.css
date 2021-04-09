@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.intro {
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.intro-text {
+    color: rgb(148, 218, 142);
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.5rem;
+}
+.slider {
+    background-image: url('https://images.pexels.com/photos/3665065/pexels-photo-3665065.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+
+.hide {
+    background: #000;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+
+.full-bg {
+    background-image: url('https://images.pexels.com/photos/1787142/pexels-photo-1787142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+
+
+
+
+/***** navbar *****/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.87);
+    padding: 5px 10px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    position: fixed;
+}
+
+.brand-name a{
+    font-size: 1.2rem;
+    margin: .5rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 16px;
+}
+
+.toggle-button .bar {
+    height: 2px;
+    width: 90%;
+    background-color: rgb(223, 223, 223);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 0 12px 15px;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li a  {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+}
+
+
+
+
+main {
+    padding: 20px;
+}
+
+
+
+.sign-in_sign-up_container {
+    width: 80vw;
+    height: 40vh;
+    margin: 0 auto;
+    position: relative;
+    top: 8em;
+}
+.sign-in_sign-up_container h1 {
+    color: #cc6929;    
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+.sign-in_sign-up_container p {
+    color: rgba(255, 255, 255, 0.678);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    text-align: center;
+}
+
+.sign-up-input-field  {
+    margin-top: 3em;
+}
+
+.sign-up-input-field input{
+    width: 100%;
+    position: relative;
+    padding: 10px 15px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color:rgba(0, 0, 0, 0.822);
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+}
+.sign-up-input-field .sign-up-btn {
+    margin: 1em auto 1em auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 15px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    background: rgb(0, 94, 0);
+    color: #fff;
+    cursor: pointer;
+}
+.sign-up-input-field .sign-up-btn:hover {
+    background: rgb(0, 128, 0);
+    transition: all 0.5s;
+}
+
+.sign-up-input-field .sign-in-btn {
+    background: transparent;
+    color: #fff;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 4em auto 1em auto;
+    display: flex;
+    justify-content: center;
+    border-color: rgba(0, 128, 0, 0.459);
+}
+.sign-up-input-field .sign-in-btn:hover {
+    background-image: url('https://images.pexels.com/photos/1787142/pexels-photo-1787142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s;
+}
