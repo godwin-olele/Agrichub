@@ -11,42 +11,80 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
     <div class="full-bg">
-        <div class="overlay"></div>
+        <div class="overlay">
 
+
+        <div class="brand-title-mobile"><img src="https://img.icons8.com/plasticine/40/000000/leaf.png"/>FarmerHub</div>
+        <!----- navbar ----->
         <nav class="navbar">
-            <div class="brand-name"><a href="/"><img src="https://img.icons8.com/plasticine/25/000000/leaf.png"/>FarmersHub</a></div>
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </div>
+           <div class="brand-title"><img src="https://img.icons8.com/plasticine/45/000000/leaf.png"/>FarmerHub</div>
+           <a href="#" class="toggle-button">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+           </a>
+           <div class="navbar-links">
+               <ul>
+                   <li class="nav"><a href="./home.html">Home</a></li>
+                   <li class="nav"><a href="#">News</a></li>
+                   <li class="nav"><a href="#">Market</a></li>
+                   <li class="nav"><a href="#">Explore</a></li>
+                   <li class="nav"><a href="#">Chat Room</a></li>
+                   <li class="nav"><a href="#">How to?</a></li>
+                   <li class="about-nav"><a href="#">About</a></li>
+               </ul>
+           </div>
         </nav>
 
-        <main>
-            <div class="sign-in_sign-up_container">
-               <h1>A Place For Agriculturist</h1><br>
-               <p>Where millions of small-scale and large-scale
-                farmers/Gardeners connect and Collaborate.</p> 
-                <form class="sign-up-input-field">
-                    <input type="email" id="sign-up" placeholder="Email">
-                    <button class="sign-up-btn">Sign Up</button>
-                    <button class="sign-in-btn">Sign In</button>
-                </form>
+                
+
+
+
+
+        <main class="main-container">
+            <div class="container">
+
+                <div class="illustration">
+                    <div class="page-title">
+
+                    </div>
+                </div>
+    
+                  
+                <div class="sign-in_sign-up_container">
+                     <h2 class="sign-up-header">Sign up</h2>
+                     <h1>A Place For Agriculturist</h1><br>
+                     <p>Where small-scale and large-scale
+                        farmers and Gardeners connect and collaborate.</p> 
+                        <p class="👍">Join the community!</p>
+                     <form class="sign-up-input-field">
+                        <label for="sign-up">Email address</label>
+                        <input type="email" id="sign-up" placeholder="Enter your email">
+                        <br>
+                        <label for="password">Set password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter password">
+                        <button class="sign-up-btn">Sign up</button>
+                        <p class="sign-in"> Already have an account? <a href="./sign-in.html">Sign In</a></p>
+                     </form>
+               </div>
+
             </div>
-            
+
+            <div class="sign-in_sign-up_container_mobile">
+                <a href="#" class="sign-in-btn">Sign in</a>
+                <a href="#" class="sign-up-btn">Sign up</a>
+            </div>
 
            
         </main>
