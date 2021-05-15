@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    
 }
 
 .sign-in_sign-up_container_mobile {
@@ -19,20 +18,78 @@ body {
     align-items: center;
 }
 .sign-in_sign-up_container_mobile a {
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-align: center;
     text-decoration: none;
 }
 .sign-in_sign-up_container_mobile .sign-up-btn {
     background-color: #fff;
     color: green;
-    padding: 20px 15vw;
+    padding: 20px 60px;
     font-size: 1.3rem;
     position: absolute;
     bottom: 0;
     right: 0;
     border-top-left-radius: 50px;
 }
+.sign-in_sign-up_container_mobile .form-container-mobile {
+    display: none;
+}
+
+
+.form-container-mobile {
+    position: relative;
+}
+.sign-up-btn .form-container-mobile input{
+    width: 100%;
+    height: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 30px; 
+    /*padding: 10px;*/
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-bottom: 1px solid #999;
+}
+.box .form-container-mobile div {
+    position: relative;
+}
+.box .form-container-mobile div label {
+    position: relative;
+    top: 0px;
+    color: rgb(255, 153, 0);
+    transition: .5s; 
+    pointer-events: none;
+}
+
+/*
+.sign-up-btn .form-container-mobile label {
+    position: absolute;
+    pointer-events: none;
+    color: #999;
+    transition: .5s;
+    top: 10px;
+}
+.sign-up-btn .form-container-mobile input:focus ~ label {
+   top: -12px;
+}
+
+/* mobile form field 
+.mobile-form-field {
+  margin-top: 40px;
+}
+/*.email, .password {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 7px;
+    color:rgba(0, 0, 0, 0.822);
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}*/
 .sign-in_sign-up_container_mobile .sign-in-btn {
     position: absolute;
     left: 50px;
@@ -217,6 +274,71 @@ body {
     border-radius: 10px;
 }
 
+
+
+@media screen and (min-width: 768px) {
+
+    .full-bg {
+        background-image: url('https://images.unsplash.com/photo-1471193945509-9ad0617afabf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .overlay {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom:0;
+        background: rgba(0, 0, 0, 0.30);
+    }
+    .sign-in_sign-up_container h1 {
+        color: #de7900;    
+        text-align: start;
+        font-family: 'Rubik', sans-serif;
+        font-weight: bolder;
+        font-size: 2.5rem;
+    }
+    .sign-in_sign-up_container p {
+        color: rgba(255, 255, 255, 0.87);
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        text-align: start;
+        background: rgba( 17, 255, 1, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 5.5px );
+        -webkit-backdrop-filter: blur( 5.5px );
+        border-radius: 10px;
+        padding: 10px 10px;
+        height: 130px;
+        display: flex;
+        align-items: center;
+    }
+    .sign-in_sign-up_container .👍 {
+        margin-top: 2em;
+        background: rgba( 17, 255, 1, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 5.5px );
+        -webkit-backdrop-filter: blur( 5.5px );
+        border-radius: 10px;
+        position: absolute;
+        padding: 10px 10px;
+        height: 50px;
+    }
+    .sign-in_sign-up_container {
+        width: 500px;
+        height: 30vh;
+        margin: 0 auto;
+        position: relative;
+        top: 10em;
+    }
+      
+}
+
 @media screen and (max-width: 900px) {
     .toggle-button {
         display: flex;
@@ -266,7 +388,7 @@ body {
 main {
     padding: 20px;
 }*/
-/*
+
 .sign-in_sign-up_container {
     width: 80vw;
     height: 40vh;
@@ -276,7 +398,7 @@ main {
 }
 .sign-in_sign-up_container h1 {
     color: #de7900;    
-    text-align: center;
+    text-align: start;
     font-family: 'Rubik', sans-serif;
     font-weight: bolder;
     font-size: 1.7rem;
@@ -286,7 +408,7 @@ main {
     font-family: 'Rubik', sans-serif;
     font-size: 1.1rem;
     line-height: 1.7rem;
-    text-align: center;
+    text-align: start;
 }
 
 .sign-up-input-field  {
@@ -328,7 +450,7 @@ main {
     transition: all 0.5s;
 }
 
-/*
+
 .sign-up-input-field p{
     color: #fff;
     outline: none;
@@ -351,7 +473,7 @@ main {
     background-size: cover;
     transition: all 0.5s;
 }
-*/
+
 @media only screen and (max-width: 768px) {
     .brand-title {
         font-size: 1.3rem;
@@ -430,7 +552,7 @@ main {
     }
     .sign-in_sign-up_container h1 {
         color: #de7900;    
-        text-align: center;
+        text-align: start;
         font-family: 'Rubik', sans-serif;
         font-weight: bolder;
         font-size: 2rem;
@@ -440,7 +562,7 @@ main {
         font-family: 'Rubik', sans-serif;
         font-size: 1.5rem;
         line-height: 1.7rem;
-        text-align: center;
+        text-align: start;
     }
 
     .sign-up-input-field  {
@@ -506,8 +628,28 @@ main {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+    .sign-in_sign-up_container_mobile {
+        display: none;
+    }
+
+    .sign-up-input-field  {
+        margin-top: 0;
+        display: block;
+    }
+
+
+    .brand-title-mobile {
+        font-size: 1.5rem;
+        margin: .5em auto;
+        font-family: 'Neucha', cursive;
+        color: #fff;
+        text-align: center;
+        display: none;
+    }
     .navbar {
         display: block;
+        
     }
 
     .brand-title {
@@ -521,12 +663,6 @@ main {
         justify-content: center;
         align-items: center;
     }
-
-
-
-
-
-
 
     .about-nav {
         border: 2px solid #ffb037;
@@ -550,7 +686,8 @@ main {
     box-shadow: 10px 10px 71px 0px rgba(0,0,0,0.75);
     /*box-shadow: 17px 21px 31px 11px rgba(0,0,0,0.75);*/
 } 
-.sign-up-header{
+.sign-up-header {
+    display: block;
     text-align: start;
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
@@ -560,13 +697,12 @@ main {
     margin-bottom: .5em;
     color: rgb(41, 41, 41);
 }
-.sign-up-input-field  {
-    margin-top: 0;
-}
+
 .sign-up-input-field .sign-in {
     color: #000;
     display: block;
-    font-style: 1rem;
+    font-size: 1rem;
+    text-align: center;
 }
 .sign-in_sign-up_container {
     width: 40vw;
@@ -645,6 +781,7 @@ label {
     display: flex;
     justify-content: center;
 }
+
 .sign-up-input-field .sign-up-btn {
     /*margin: 2em 0 0 5em;*/
     display: flex;
