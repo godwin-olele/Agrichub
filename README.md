@@ -15,7 +15,7 @@ AgriculHub is a place for agriculturist, a place where small scale and large sca
 
 #### Open a terminal and run the following git command:
 ```
-   git clone 
+   git clone https://github.com/Godwindaniel10/Agriculhub.git
 ```
 
 
