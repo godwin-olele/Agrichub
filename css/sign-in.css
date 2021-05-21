@@ -1,167 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Noto Sans JP', sans-serif;
-    padding: 10px ; 
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 10px;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .sign-in-to-farmer-hub-header-container h1 {
-    font-family: 'Rubik', sans-serif;
-    text-align: center;
-    font-size: 1.5rem;
-    color: rgb(77, 77, 77);
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(77, 77, 77);
 }
 
-form {
-    background:rgba(0, 128, 0, 0.048);
-    width: 85vmin;
+form {  
+  background: rgba(0, 128, 0, 0.048);
+  width: 85vmin;
+  height: 100%;
+  margin-top: 1.5em;
+  border-radius: 10px;
+  padding: 30px 20px;
+  margin: 1.5em auto 0 auto;
+}
+
+
+
+label {
+  font-size: 0.9rem;
+}
+input {
+  width: 100%;
+  padding: 7px 15px;
+  margin-top: 0.5em;
+  border-radius: 5px;
+  font-size: 1rem;
+  border-color: #00000013;
+}
+.password-container {
+  margin-top: 1.5em;
+}
+button {
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 1.5em;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background: rgba(12, 150, 12, 0.705);
+  color: #fff;
+  cursor: pointer;
+}
+button:hover {
+  background: rgba(10, 131, 10, 0.795);
+  transition: all 0.5s;
+}
+.label_and_forgotten-password_container {
+  display: flex;
+  justify-content: space-between;
+}
+.label_and_forgotten-password_container a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: rgb(0, 60, 255);
+}
+
+.new-to-github-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(207, 207, 207, 0.692);
+  border-radius: 7px;
+  height: 8vh;
+  width: 85vmin;
+  margin: 1em auto 0 auto;
+  font-size: 3.5vw;
+  padding: 0 20px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: rgb(88, 88, 88);
+}
+.new-to-github-section a {
+  text-decoration: none;
+  color: rgb(0, 60, 255);
+}
+.new-to-github-section a:hover {
+  text-decoration: underline;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  form {
+    background: rgba(0, 128, 0, 0.048);
+    width: 70%;
     height: 100%;
     margin-top: 1.5em;
     border-radius: 10px;
     padding: 30px 20px;
     margin: 1.5em auto 0 auto;
-}
+  }
 
-label {
-    font-size: 0.9rem;
-}
-input {
+  label {
+    font-size: 1.2rem;
+  }
+
+  input {
     width: 100%;
-    padding: 7px 15px;
+    padding: 10px 15px;
     margin-top: 0.5em;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 7px;
+    font-size: 1.3rem;
     border-color: #00000013;
-}
-.password-container{
-    margin-top: 1.5em;
-}
-button {
-    width: 100%;
-    padding: 10px 0;
-    margin-top: 1.5em;
-    border-radius: 5px;
+    outline: none;
+  }
+  .label_and_forgotten-password_container a {
     font-size: 1rem;
+    text-decoration: none;
+    color: rgb(0, 60, 255);
+  }
+
+  button {
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 2em;
+    border-radius: 5px;
+    font-size: 1.2rem;
     outline: none;
     border: none;
     background: rgba(12, 150, 12, 0.705);
     color: #fff;
     cursor: pointer;
-}
-button:hover {
-    background: rgba(10, 131, 10, 0.795);
-    transition: all 0.5s;
-}
-.label_and_forgotten-password_container {
-    display: flex;
-    justify-content: space-between;
-}
-.label_and_forgotten-password_container a{
-    font-size: 0.8rem;
-    text-decoration: none;
-    color: rgb(0, 60, 255);
-}
-
-.new-to-github-section {
+  }
+  .new-to-github-section {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(207, 207, 207, 0.692);
     border-radius: 7px;
     height: 8vh;
-    width: 85vmin;
+    width: 70%;
     margin: 1em auto 0 auto;
-    font-size: 3.5vw;
+    font-size: 1.3rem;
     padding: 0 20px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     color: rgb(88, 88, 88);
-}
-.new-to-github-section a {
+  }
+  .new-to-github-section a {
     text-decoration: none;
     color: rgb(0, 60, 255);
-}
-.new-to-github-section a:hover {
-    text-decoration: underline;
-}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-    form {
-        background:rgba(0, 128, 0, 0.048);
-        width: 70%;
-        height: 100%;
-        margin-top: 1.5em;
-        border-radius: 10px;
-        padding: 30px 20px;
-        margin: 1.5em auto 0 auto;
-    }
-
-    label {
-        font-size: 1.2rem;
-    }
-     
-    input {
-        width: 100%;
-        padding: 10px 15px;
-        margin-top: 0.5em;
-        border-radius: 7px;
-        font-size: 1.3rem;
-        border-color: #00000013;
-        outline :none;
-    }
-    .label_and_forgotten-password_container a{
-        font-size: 1rem;
-        text-decoration: none;
-        color: rgb(0, 60, 255);
-    }
-
-    button {
-        width: 100%;
-        padding: 15px 0;
-        margin-top: 2em;
-        border-radius: 5px;
-        font-size: 1.2rem;
-        outline: none;
-        border: none;
-        background: rgba(12, 150, 12, 0.705);
-        color: #fff;
-        cursor: pointer;
-    }
-    .new-to-github-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid rgba(207, 207, 207, 0.692);
-        border-radius: 7px;
-        height: 8vh;
-        width: 70%;
-        margin: 1em auto 0 auto;
-        font-size: 1.3rem;
-        padding: 0 20px;
-        font-family: 'Noto Sans JP', sans-serif;
-        color: rgb(88, 88, 88);
-    }
-    .new-to-github-section a {
-        text-decoration: none;
-        color: rgb(0, 60, 255);
-    }
-    
-
-
-
+  }
 }
