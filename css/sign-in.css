@@ -18,6 +18,13 @@ body {
   margin-bottom: 1em;
 }
 
+/*Apply styles starting from medium devices and up to extra large devices */
+@media (min-width: 0px) and (max-width: 1199.98px) {
+  .carousel {
+    display: hidden;
+  }
+}
+
 .sign-in-to-farmer-hub-header-container h1 {
   font-family: "Rubik", sans-serif;
   text-align: center;
@@ -25,7 +32,7 @@ body {
   color: rgb(77, 77, 77);
 }
 
-form {  
+form {
   background: rgba(0, 128, 0, 0.048);
   width: 85vmin;
   height: 100%;
@@ -34,8 +41,6 @@ form {
   padding: 30px 20px;
   margin: 1.5em auto 0 auto;
 }
-
-
 
 label {
   font-size: 0.9rem;
@@ -160,4 +165,10 @@ button:hover {
     text-decoration: none;
     color: rgb(0, 60, 255);
   }
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  
 }
