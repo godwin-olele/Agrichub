@@ -1,0 +1,1483 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html {
+	font-family:  sans-serif;
+	font-size: 10px;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+header {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+    
+}
+
+.container {
+	width: 100%;
+	max-width: 117rem;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+
+.menu-icons {
+	color: #000;
+	font-size: 4rem;
+	position: absolute;
+	top: 50%;
+	right: 2rem;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 1500;
+	display: none;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 8rem;
+	/*border-bottom: 1px solid rgba(0, 0, 0, 0.1);*/
+	position: relative;
+}
+
+.logo {
+	font-size: 2.5rem;
+	color: #fff;
+	padding: 0.5rem 1.3rem;
+	display: inline-block;
+	letter-spacing: 0.2rem;
+	border-radius: 5rem;
+	margin-right: 10rem;
+	/*width: 5rem;
+	height: 5rem;
+	background-color: #eb3007;
+	display: flex;
+	border-radius: 100%;
+	margin-right: 5rem;*/
+}
+.logo .agricul {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	padding: 0.5rem 0 0.5rem 1rem;
+	border-top-left-radius: 2rem;
+	border-bottom-left-radius: 2rem;
+	color: rgba(0, 0, 0, 0.733);
+    
+}
+.logo .hub {
+	/*background: rgba( 0, 0, 0, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+	padding: 0.5rem 1rem 0.5rem 0;
+	border-top-right-radius: 2rem;
+	border-bottom-right-radius: 2rem;*/
+	color: #ff7300;
+}
+
+
+.nav-list {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+.nav-list li {
+	line-height: 8rem;
+	position: relative;
+}
+
+.sub-menu li {
+	line-height: 4rem;
+}
+
+.nav-list a {
+	display: block;
+	color: #000;
+	padding: 0 1.5rem;
+	font-size: 1.7rem;
+	/*text-transform: uppercase;*/
+	transition: color 650ms;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.nav-list a:hover {
+	color: #ff7300;
+}
+
+.btn {
+	color: rgba(0, 0, 0, 0.733);
+	padding: 1.3rem;
+	display: inline-block;
+	/*background-color: #ff8303;
+    border: 2px solid #ff8303;
+	border-radius: 5rem;*/
+	/*background: rgba( 0, 0, 0, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );*/
+    border-radius: 5rem;
+    border: 2px solid #ff7300;
+	transition: background-color 550ms;
+}
+.btn:hover {
+	color: #ff7300;
+	background-color: transparent;
+}
+
+.sub-menu {
+	width: 20rem;
+	display: block;
+	position: absolute;
+	border-top: 3px solid #ff7300;
+	background-color: #191919;
+	z-index: 100;
+	top: 16rem;
+	transition: all 650ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.sub-menu::before {
+	content: '';
+	position: absolute;
+	top: -2.5rem;
+	left: 3rem;
+	border: 1.2rem solid transparent;
+	border-bottom-color: #ff7300;
+}
+
+.sub-menu .sub-menu::before {
+	top: 0.9rem;
+	left: -2.5rem;
+	border: 1.2rem solid transparent;
+	border-right-color: #ff7300;
+}
+
+.sub-menu .sub-menu {
+	border-top: none;
+	border-left: 3px solid #ff7300;
+	top: 0;
+	left: 160%;
+}
+
+.nav-list li:hover > .sub-menu {
+	top: 8rem;
+	opacity: 1;
+	visibility: visible;
+}
+
+.sub-menu li:hover > .sub-menu {
+	top: 0;
+	left: 100%;
+}
+
+li.move-right {
+	margin: auto 0 auto auto;
+	line-height: initial;
+}
+.move-right a {
+	color: #ff7300;
+}
+
+
+/* food crop */
+.overlay {
+	background: rgba( 0, 0, 0, 0.65 );
+	height: 20rem;
+	width: 100%;
+	position: relative;
+}
+.food-crop-intro {
+    color: #fff;
+    background: #ff7300;
+    height: 20rem;
+    margin-top: 3rem;
+    width: 100%;
+	background-image: url('https://images.pexels.com/photos/4260541/pexels-photo-4260541.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.food-crop-intro .food-crop-header {
+    font-size: 5rem;
+    position: absolute;
+    left: 13.5rem;
+    padding-top: 2rem;
+}
+
+.food-crop-intro .food-crop-text {
+    position: absolute;
+    left: 13.7rem;
+    top: 10rem;
+    font-size: 20px;
+    width: 70%;
+	color: rgb(226, 226, 226);
+}
+main {
+	position: absolute;
+	top: 31rem;
+	border: 2px solid #000;
+	width: 100%;
+	height: 700vh;
+}
+.food-crop-and-type-container h1 {
+	position: absolute;
+	top: 7rem;
+	font-size: 3rem;
+	border-bottom: 2px solid #ff7300;
+	text-align: start;
+	left: 13.7rem;
+	padding: 1rem .0rem 1rem .0rem;
+	font-family: 'Merienda', cursive;
+	color: rgb(22, 22, 22);
+	border-top-right-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+}
+.food-crop-and-type-container h1::before {
+	content: "";
+	border: 2px solid rgb(228, 228, 228);
+	margin-right: 1.5rem;
+}
+
+/* grid-layout-container */
+.grid-layout-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 70px;
+	border: 2px solid #000;
+	width: 85%;
+	height: auto;
+	margin: 20rem auto 0 auto;
+	padding: 50px;
+}
+.grid-layout-container .box1 {
+	width: 100%;
+	height: 80vh;
+	background-image: url('https://images.pexels.com/photos/4110256/pexels-photo-4110256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-position: center;
+	background-size: cover;
+}
+.overlay-img {
+	background: rgba( 0, 0, 0, 0.65 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 4px );
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.overlay-2 {
+	background: rgba( 0, 0, 0, 0.50 );
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.grid-layout-container .box1 .rice-image {
+	background-image: url('https://images.pexels.com/photos/4110257/pexels-photo-4110257.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-position: center;
+	background-size: cover;
+	height: 15vh;
+	width: 100%;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius: 30px;
+	-webkit-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	box-shadow: 0px 26px 20px -22px rgba(0,0,0,0.55);
+}
+.grid-layout-container .box1 .rice-image h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 3rem;
+}
+.grid-layout-container .box1 .crop-description {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 4rem;
+	font-size: 17px;
+	color: rgb(228, 228, 228);
+	line-height: 2.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.grid-layout-container .box1 .crop-description a {
+	text-decoration: underline;
+	color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box1 .buttons {
+	position: absolute;
+	bottom: 2rem;
+	padding: 20px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.grid-layout-container .box1 .buttons .btn1 {
+	padding: 1.5rem 5rem;
+	font-size: 1.7rem;
+	color: rgb(32, 32, 32);
+	border-radius: 5px;
+	background-color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box1 .buttons .btn2 {
+	padding: 1rem 5rem;
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 1.5rem;
+	color: #fff;
+	border-radius: 50px;
+}
+
+
+/* box 2 */
+
+.grid-layout-container .box2 {
+	width: 100%;
+	height: 80vh;
+	background-image: url('https://images.pexels.com/photos/7877993/pexels-photo-7877993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-position: center;
+	background-size: cover;
+}
+.overlay-img {
+	background: rgba( 0, 0, 0, 0.65 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 4px );
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.overlay-2 {
+	background: rgba( 0, 0, 0, 0.50 );
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.grid-layout-container .box2 .maize-image {
+	background-image: url('https://images.pexels.com/photos/60507/maize-corn-indian-corn-vegetables-60507.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-position: center;
+	background-size: cover;
+	height: 15vh;
+	width: 100%;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius: 30px;
+	-webkit-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	box-shadow: 0px 26px 20px -22px rgba(0,0,0,0.55);
+}
+.grid-layout-container .box2 .maize-image h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 3rem;
+}
+.grid-layout-container .box2 .crop-description {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 4rem;
+	font-size: 17px;
+	color: rgb(228, 228, 228);
+	line-height: 2.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.grid-layout-container .box2 .crop-description a {
+	text-decoration: underline;
+	color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box2 .buttons {
+	position: absolute;
+	bottom: 2rem;
+	padding: 20px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.grid-layout-container .box2 .buttons .btn1 {
+	padding: 1.5rem 5rem;
+	font-size: 1.7rem;
+	color: rgb(32, 32, 32);
+	border-radius: 5px;
+	background-color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box2 .buttons .btn2 {
+	padding: 1rem 5rem;
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 1.5rem;
+	color: #fff;
+	border-radius: 50px;
+}
+
+
+
+/* box 3 */
+
+.grid-layout-container .box3 {
+	width: 100%;
+	height: 80vh;
+	background-image: url('https://www.sanskrutirestaurant.co.uk/liverpool/wp-content/uploads/2019/11/millets.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.overlay-img {
+	background: rgba( 0, 0, 0, 0.65 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 4px );
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.overlay-2 {
+	background: rgba( 0, 0, 0, 0.50 );
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.grid-layout-container .box3 .millet-image {
+	background-image: url('https://st1.thehealthsite.com/wp-content/uploads/2018/10/whole-grains-2-655x353.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 15vh;
+	width: 100%;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius: 30px;
+	-webkit-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	box-shadow: 0px 26px 20px -22px rgba(0,0,0,0.55);
+}
+.grid-layout-container .box3 .millet-image h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 3rem;
+}
+.grid-layout-container .box3 .crop-description {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 4rem;
+	font-size: 17px;
+	color: rgb(228, 228, 228);
+	line-height: 2.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.grid-layout-container .box3 .crop-description a {
+	text-decoration: underline;
+	color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box3 .buttons {
+	position: absolute;
+	bottom: 2rem;
+	padding: 20px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.grid-layout-container .box3 .buttons .btn1 {
+	padding: 1.5rem 5rem;
+	font-size: 1.7rem;
+	color: rgb(32, 32, 32);
+	border-radius: 5px;
+	background-color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box3 .buttons .btn2 {
+	padding: 1rem 5rem;
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 1.5rem;
+	color: #fff;
+	border-radius: 50px;
+}
+
+
+
+
+/* box 4 */
+
+.grid-layout-container .box4 {
+	width: 100%;
+	height: 80vh;
+	background-image: url('https://cdn2.stylecraze.com/wp-content/uploads/2019/06/Peanut-Mungfali-Benefits-Uses-and-Side-Effects-in-Hindi.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.overlay-img {
+	background: rgba( 0, 0, 0, 0.65 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 4px );
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.overlay-2 {
+	background: rgba( 0, 0, 0, 0.50 );
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.grid-layout-container .box4 .groundnut-image {
+	background-image: url('https://www.nesd.in/wp-content/uploads/2020/09/51UzLZZlgtL.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 15vh;
+	width: 100%;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius: 30px;
+	-webkit-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	box-shadow: 0px 26px 20px -22px rgba(0,0,0,0.55);
+}
+.grid-layout-container .box4 .groundnut-image h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 3rem;
+}
+.grid-layout-container .box4 .crop-description {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 4rem;
+	font-size: 17px;
+	color: rgb(228, 228, 228);
+	line-height: 2.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.grid-layout-container .box4 .crop-description a {
+	text-decoration: underline;
+	color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box4 .buttons {
+	position: absolute;
+	bottom: 2rem;
+	padding: 20px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.grid-layout-container .box4 .buttons .btn1 {
+	padding: 1.5rem 5rem;
+	font-size: 1.7rem;
+	color: rgb(32, 32, 32);
+	border-radius: 5px;
+	background-color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box4 .buttons .btn2 {
+	padding: 1rem 5rem;
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 1.5rem;
+	color: #fff;
+	border-radius: 50px;
+}
+
+
+
+/* box 5 */
+
+.grid-layout-container .box5 {
+	width: 100%;
+	height: 80vh;
+	background-image: url('https://packagingeurope.com/downloads/8471/download/crown.png?cb=8572121aa96fa3ac99c93d976dafae37&w=640');
+	background-position: center;
+	background-size: cover;
+}
+.overlay-img {
+	background: rgba( 0, 0, 0, 0.65 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 4px );
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.overlay-2 {
+	background: rgba( 0, 0, 0, 0.50 );
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.grid-layout-container .box5 .sugar-beet-image {
+	background-image: url('https://image.freepik.com/free-photo/sugar-beet-roots-extracted-from-ground-from-flat-view_234715-115.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 15vh;
+	width: 100%;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius: 30px;
+	-webkit-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	box-shadow: 0px 26px 20px -22px rgba(0,0,0,0.55);
+}
+.grid-layout-container .box5 .sugar-beet-image h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 3rem;
+}
+.grid-layout-container .box5 .crop-description {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 4rem;
+	font-size: 17px;
+	color: rgb(228, 228, 228);
+	line-height: 2.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.grid-layout-container .box5 .crop-description a {
+	text-decoration: underline;
+	color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box5 .buttons {
+	position: absolute;
+	bottom: 2rem;
+	padding: 20px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.grid-layout-container .box5 .buttons .btn1 {
+	padding: 1.5rem 5rem;
+	font-size: 1.7rem;
+	color: rgb(32, 32, 32);
+	border-radius: 5px;
+	background-color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box5 .buttons .btn2 {
+	padding: 1rem 5rem;
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 1.5rem;
+	color: #fff;
+	border-radius: 50px;
+}
+
+
+
+/* box 6 */
+
+.grid-layout-container .box6 {
+	width: 100%;
+	height: 80vh;
+	background-image: url('https://www.businesscalltoaction.org/sites/default/files/cacao-beans.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.overlay-img {
+	background: rgba( 0, 0, 0, 0.65 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 4px );
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.overlay-2 {
+	background: rgba( 0, 0, 0, 0.50 );
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.grid-layout-container .box6 .cocoa-image {
+	background-image: url('http://zoyo.s3.amazonaws.com/2014/06/Cocoa-pods-story.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 15vh;
+	width: 100%;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius: 30px;
+	-webkit-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	box-shadow: 0px 26px 20px -22px rgba(0,0,0,0.55);
+}
+.grid-layout-container .box6 .cocoa-image h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 3rem;
+}
+.grid-layout-container .box6 .crop-description {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 4rem;
+	font-size: 17px;
+	color: rgb(228, 228, 228);
+	line-height: 2.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.grid-layout-container .box6 .crop-description a {
+	text-decoration: underline;
+	color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box6 .buttons {
+	position: absolute;
+	bottom: 2rem;
+	padding: 20px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.grid-layout-container .box6 .buttons .btn1 {
+	padding: 1.5rem 5rem;
+	font-size: 1.7rem;
+	color: rgb(32, 32, 32);
+	border-radius: 5px;
+	background-color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box6 .buttons .btn2 {
+	padding: 1rem 5rem;
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 1.5rem;
+	color: #fff;
+	border-radius: 50px;
+}
+
+
+
+
+/* box 7 */
+
+.grid-layout-container .box7 {
+	width: 100%;
+	height: 80vh;
+	background-image: url('https://images.theconversation.com/files/148463/original/image-20161202-25674-vij85u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip');
+	background-position: center;
+	background-size: cover;
+}
+.overlay-img {
+	background: rgba( 0, 0, 0, 0.65 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 4px );
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.overlay-2 {
+	background: rgba( 0, 0, 0, 0.50 );
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.grid-layout-container .box7 .cassava-image {
+	background-image: url('https://www.scidev.net/global/wp-content/uploads/2020/11/cassavaMAIN2019.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 15vh;
+	width: 100%;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius: 30px;
+	-webkit-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	box-shadow: 0px 26px 20px -22px rgba(0,0,0,0.55);
+}
+.grid-layout-container .box7 .cassava-image h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 3rem;
+}
+.grid-layout-container .box7 .crop-description {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 4rem;
+	font-size: 17px;
+	color: rgb(228, 228, 228);
+	line-height: 2.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.grid-layout-container .box7 .crop-description a {
+	text-decoration: underline;
+	color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box7 .buttons {
+	position: absolute;
+	bottom: 2rem;
+	padding: 20px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.grid-layout-container .box7 .buttons .btn1 {
+	padding: 1.5rem 5rem;
+	font-size: 1.7rem;
+	color: rgb(32, 32, 32);
+	border-radius: 5px;
+	background-color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box7 .buttons .btn2 {
+	padding: 1rem 5rem;
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 1.5rem;
+	color: #fff;
+	border-radius: 50px;
+}
+
+
+
+/* box 8 */
+
+.grid-layout-container .box8 {
+	width: 100%;
+	height: 80vh;
+	background-image: url('https://images.theconversation.com/files/148463/original/image-20161202-25674-vij85u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip');
+	background-position: center;
+	background-size: cover;
+}
+.overlay-img {
+	background: rgba( 0, 0, 0, 0.65 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 4px );
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.overlay-2 {
+	background: rgba( 0, 0, 0, 0.50 );
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.grid-layout-container .box8 .cocoyam-image {
+	background-image: url('https://www.scidev.net/global/wp-content/uploads/2020/11/cassavaMAIN2019.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 15vh;
+	width: 100%;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius: 30px;
+	-webkit-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	box-shadow: 0px 26px 20px -22px rgba(0,0,0,0.55);
+}
+.grid-layout-container .box8 .cocoyam-image h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 3rem;
+}
+.grid-layout-container .box8 .crop-description {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 4rem;
+	font-size: 17px;
+	color: rgb(228, 228, 228);
+	line-height: 2.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.grid-layout-container .box8 .crop-description a {
+	text-decoration: underline;
+	color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box8 .buttons {
+	position: absolute;
+	bottom: 2rem;
+	padding: 20px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.grid-layout-container .box8 .buttons .btn1 {
+	padding: 1.5rem 5rem;
+	font-size: 1.7rem;
+	color: rgb(32, 32, 32);
+	border-radius: 5px;
+	background-color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box8 .buttons .btn2 {
+	padding: 1rem 5rem;
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 1.5rem;
+	color: #fff;
+	border-radius: 50px;
+}
+
+
+
+
+
+/* box 8 */
+
+.grid-layout-container .box8 {
+	width: 100%;
+	height: 80vh;
+	background-image: url('https://lh3.googleusercontent.com/proxy/7HH1fMJaHvTryQ0I_LtdFKEWhUUIEuZufXFPAwJokTuGOYFNB14D3FtNimCgF1kqlom6aawnRukwMMTOrnfJatQgJGBSGhMPYbMzAwoQuwqL6R4JzEJxRcE_IMssX6I');
+	background-position: center;
+	background-size: cover;
+}
+.overlay-img {
+	background: rgba( 0, 0, 0, 0.65 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 4px );
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.overlay-2 {
+	background: rgba( 0, 0, 0, 0.50 );
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.grid-layout-container .box8 .cocoyam-image {
+	background-image: url('https://modernfarmer.com/wp-content/uploads/2015/12/yuca.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 15vh;
+	width: 100%;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius: 30px;
+	-webkit-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	box-shadow: 0px 26px 20px -22px rgba(0,0,0,0.55);
+}
+.grid-layout-container .box8 .cocoyam-image h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 3rem;
+}
+.grid-layout-container .box8 .crop-description {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 4rem;
+	font-size: 17px;
+	color: rgb(228, 228, 228);
+	line-height: 2.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.grid-layout-container .box8 .crop-description a {
+	text-decoration: underline;
+	color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box8 .buttons {
+	position: absolute;
+	bottom: 2rem;
+	padding: 20px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.grid-layout-container .box8 .buttons .btn1 {
+	padding: 1.5rem 5rem;
+	font-size: 1.7rem;
+	color: rgb(32, 32, 32);
+	border-radius: 5px;
+	background-color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box8 .buttons .btn2 {
+	padding: 1rem 5rem;
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 1.5rem;
+	color: #fff;
+	border-radius: 50px;
+}
+
+
+
+
+
+/* box 9 */
+
+.grid-layout-container .box9 {
+	width: 100%;
+	height: 80vh;
+	background-image: url('https://www.organicfacts.net/wp-content/uploads/tomatoes.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.overlay-img {
+	background: rgba( 0, 0, 0, 0.65 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 4px );
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.overlay-2 {
+	background: rgba( 0, 0, 0, 0.50 );
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.grid-layout-container .box9 .tomato-image {
+	background-image: url('https://engineering.stanford.edu/sites/default/files/styles/full_width_banner_tall/public/tomato.jpg?itok=DRbvVpuq');
+	background-position: center;
+	background-size: cover;
+	height: 15vh;
+	width: 100%;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius: 30px;
+	-webkit-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	box-shadow: 0px 26px 20px -22px rgba(0,0,0,0.55);
+}
+.grid-layout-container .box9 .tomato-image h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 3rem;
+}
+.grid-layout-container .box9 .crop-description {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 4rem;
+	font-size: 17px;
+	color: rgb(228, 228, 228);
+	line-height: 2.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.grid-layout-container .box9 .crop-description a {
+	text-decoration: underline;
+	color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box9 .buttons {
+	position: absolute;
+	bottom: 2rem;
+	padding: 20px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.grid-layout-container .box9 .buttons .btn1 {
+	padding: 1.5rem 5rem;
+	font-size: 1.7rem;
+	color: rgb(32, 32, 32);
+	border-radius: 5px;
+	background-color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box9 .buttons .btn2 {
+	padding: 1rem 5rem;
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 1.5rem;
+	color: #fff;
+	border-radius: 50px;
+}
+
+
+
+/* box 10 */
+
+.grid-layout-container .box10 {
+	width: 100%;
+	height: 80vh;
+	background-image: url('https://salixfruits.com/assets/img/bananas-01.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.overlay-img {
+	background: rgba( 0, 0, 0, 0.65 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 4px );
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.overlay-2 {
+	background: rgba( 0, 0, 0, 0.50 );
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.grid-layout-container .box10 .plantain-image {
+	background-image: url('https://www.wideopeneats.com/wp-content/uploads/2021/01/plantains-vs-bananas-950x535.png');
+	background-position: center;
+	background-size: cover;
+	height: 15vh;
+	width: 100%;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius: 30px;
+	-webkit-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	box-shadow: 0px 26px 20px -22px rgba(0,0,0,0.55);
+}
+.grid-layout-container .box10 .plantain-image h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 3rem;
+}
+.grid-layout-container .box10 .crop-description {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 4rem;
+	font-size: 17px;
+	color: rgb(228, 228, 228);
+	line-height: 2.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.grid-layout-container .box10 .crop-description a {
+	text-decoration: underline;
+	color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box10 .buttons {
+	position: absolute;
+	bottom: 2rem;
+	padding: 20px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.grid-layout-container .box10 .buttons .btn1 {
+	padding: 1.5rem 5rem;
+	font-size: 1.7rem;
+	color: rgb(32, 32, 32);
+	border-radius: 5px;
+	background-color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box10 .buttons .btn2 {
+	padding: 1rem 5rem;
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 1.5rem;
+	color: #fff;
+	border-radius: 50px;
+}
+
+
+
+
+
+/* box 11 */
+
+.grid-layout-container .box11 {
+	width: 100%;
+	height: 80vh;
+	background-image: url('https://post.greatist.com/wp-content/uploads/2020/06/cashews-nuts-732x549-thumbnail.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.overlay-img {
+	background: rgba( 0, 0, 0, 0.65 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 4px );
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.overlay-2 {
+	background: rgba( 0, 0, 0, 0.50 );
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.grid-layout-container .box11 .cashew-image {
+	background-image: url('https://post.healthline.com/wp-content/uploads/2020/11/cashew-732x549-thumbnail.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 15vh;
+	width: 100%;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius: 30px;
+	-webkit-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	box-shadow: 0px 26px 20px -22px rgba(0,0,0,0.55);
+}
+.grid-layout-container .box11 .cashew-image h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 3rem;
+}
+.grid-layout-container .box11 .crop-description {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 4rem;
+	font-size: 17px;
+	color: rgb(228, 228, 228);
+	line-height: 2.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.grid-layout-container .box11 .crop-description a {
+	text-decoration: underline;
+	color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box11 .buttons {
+	position: absolute;
+	bottom: 2rem;
+	padding: 20px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.grid-layout-container .box11 .buttons .btn1 {
+	padding: 1.5rem 5rem;
+	font-size: 1.7rem;
+	color: rgb(32, 32, 32);
+	border-radius: 5px;
+	background-color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box11 .buttons .btn2 {
+	padding: 1rem 5rem;
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 1.5rem;
+	color: #fff;
+	border-radius: 50px;
+}
+
+
+
+
+/* box 12 */
+
+.grid-layout-container .box12 {
+	width: 100%;
+	height: 80vh;
+	background-image: url('https://www.almanac.com/sites/default/files/image_nodes/carrots-table_popidar-ss.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.overlay-img {
+	background: rgba( 0, 0, 0, 0.65 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 4px );
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.overlay-2 {
+	background: rgba( 0, 0, 0, 0.50 );
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.grid-layout-container .box12 .carrot-image {
+	background-image: url('https://ucarecdn.com/459eb7be-115a-4d85-b1d8-deaabc94c643/-/format/auto/-/preview/3000x3000/-/quality/lighter/');
+	background-position: center;
+	background-size: cover;
+	height: 15vh;
+	width: 100%;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius: 30px;
+	-webkit-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	box-shadow: 0px 26px 20px -22px rgba(0,0,0,0.55);
+}
+.grid-layout-container .box12 .carrot-image h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 3rem;
+}
+.grid-layout-container .box12 .crop-description {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 4rem;
+	font-size: 17px;
+	color: rgb(228, 228, 228);
+	line-height: 2.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.grid-layout-container .box12 .crop-description a {
+	text-decoration: underline;
+	color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box12 .buttons {
+	position: absolute;
+	bottom: 2rem;
+	padding: 20px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.grid-layout-container .box12 .buttons .btn1 {
+	padding: 1.5rem 5rem;
+	font-size: 1.7rem;
+	color: rgb(32, 32, 32);
+	border-radius: 5px;
+	background-color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box12 .buttons .btn2 {
+	padding: 1rem 5rem;
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 1.5rem;
+	color: #fff;
+	border-radius: 50px;
+}
+
+
+
+
+/* box 13 */
+
+.grid-layout-container .box13 {
+	width: 100%;
+	height: 80vh;
+	background-image: url('https://cdn.shopify.com/s/files/1/0081/1856/6991/products/Ha_Mi_Gua_Zi_Semen_Melo_Muskmelon_Seed_Cucumis_Melo_1_800x.jpg?v=1569169431');
+	background-position: center;
+	background-size: cover;
+}
+.overlay-img {
+	background: rgba( 0, 0, 0, 0.65 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 4px );
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.overlay-2 {
+	background: rgba( 0, 0, 0, 0.50 );
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+.grid-layout-container .box13 .melon-seed-image {
+	background-image: url('https://ua.all.biz/img/ua/catalog/1954722.jpeg');
+	background-position: center;
+	background-size: cover;
+	height: 15vh;
+	width: 100%;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius: 30px;
+	-webkit-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
+	box-shadow: 0px 26px 20px -22px rgba(0,0,0,0.55);
+}
+.grid-layout-container .box13 .melon-seed-image h1 {
+	color: #fff;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+	top: 3rem;
+}
+.grid-layout-container .box13 .crop-description {
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	top: 4rem;
+	font-size: 17px;
+	color: rgb(228, 228, 228);
+	line-height: 2.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+.grid-layout-container .box13 .crop-description a {
+	text-decoration: underline;
+	color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box13 .buttons {
+	position: absolute;
+	bottom: 2rem;
+	padding: 20px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.grid-layout-container .box13 .buttons .btn1 {
+	padding: 1.5rem 5rem;
+	font-size: 1.7rem;
+	color: rgb(32, 32, 32);
+	border-radius: 5px;
+	background-color: #ff7300;
+	font-weight: 600;
+}
+.grid-layout-container .box13 .buttons .btn2 {
+	padding: 1rem 5rem;
+	border: 2px solid rgb(255, 255, 255);
+	font-size: 1.5rem;
+	color: #fff;
+	border-radius: 50px;
+}

@@ -7,7 +7,14 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
+.back-btn {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+.back-btn {
+    text-decoration: none;
+}
 .sign-in_sign-up_container_mobile {
     height: 10vh;
     width: 100%;
@@ -17,26 +24,56 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-.sign-in_sign-up_container_mobile a {
+.sign-in_sign-up_container_mobile .sign-in-btn {
     color: rgb(255, 255, 255);
     text-align: center;
     text-decoration: none;
 }
+
 .sign-in_sign-up_container_mobile .sign-up-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     color: green;
-    padding: 20px 60px;
+    padding: 0px 40px;
+    padding-top: 10px;
     font-size: 1.3rem;
     position: absolute;
     bottom: 0;
     right: 0;
     border-top-left-radius: 50px;
+    height: 60px;
 }
 .sign-in_sign-up_container_mobile .form-container-mobile {
     display: none;
 }
-
-
+.sign-in_sign-up_container_mobile .sign-up-btn .sign-up {
+    float: left;
+}
+.sign-in_sign-up_container_mobile .sign-up-btn .sign-up-button-mobile {
+    font-size: 2rem;
+    float: left;
+    margin-left: 0.5em;
+    border: none;
+    background-color: transparent;
+    color: green;
+}
+.sign-in_sign-up_container_mobile .already-have-an-acc {
+    display: none;
+    float: left;
+}
+.sign-in_sign-up_container_mobile .already-have-an-acc .sign-in-mobile {
+    color: rgba(0, 0, 0, 0.61);
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+    padding-left: 20px; 
+}
+.sign-in_sign-up_container_mobile .already-have-an-acc .sign-in-text {
+    color: #f38200;
+}
 .form-container-mobile {
     position: relative;
 }
@@ -50,7 +87,7 @@ body {
     outline: none;
     box-sizing: border-box;
     box-shadow: none;
-    border-bottom: 1px solid #999;
+    border-bottom: 0.3px solid rgba(153, 153, 153, 0.795);
 }
 .box .form-container-mobile div {
     position: relative;
@@ -58,7 +95,7 @@ body {
 .box .form-container-mobile div label {
     position: relative;
     top: 0px;
-    color: rgb(255, 153, 0);
+    color: rgb(80, 80, 80);
     transition: .5s; 
     pointer-events: none;
 }
@@ -117,8 +154,7 @@ body {
     font-size: 1.1rem;
     line-height: 1.7rem;
     text-align: start;
-    background: rgba( 17, 255, 1, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgba( 0, 0, 0, 0.25 );
     backdrop-filter: blur( 5.5px );
     -webkit-backdrop-filter: blur( 5.5px );
     border-radius: 10px;
@@ -126,8 +162,7 @@ body {
 }
 .sign-in_sign-up_container .👍 {
     margin-top: 2em;
-    background: rgba( 17, 255, 1, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: rgba( 0, 0, 0, 0.25 );
     backdrop-filter: blur( 5.5px );
     -webkit-backdrop-filter: blur( 5.5px );
     border-radius: 10px;
@@ -184,7 +219,7 @@ body {
 
 
 .full-bg {
-    background-image: url('https://images.unsplash.com/photo-1530507629858-e4977d30e9e0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=296&q=80');
+    background-image: url('https://images.unsplash.com/photo-1560252811-2ab1e44ce202?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -199,7 +234,7 @@ body {
     left: 0;
     right: 0;
     bottom:0;
-    background: rgba(0, 0, 0, 0.30);
+    background: rgba(0, 0, 0, 0.75);
 }
  
 .nav {
@@ -467,7 +502,7 @@ main {
     width: 7em;
 }
 .sign-up-input-field a:hover {
-    background-image: url('https://images.pexels.com/photos/1787142/pexels-photo-1787142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    /*background-image: url('https://images.pexels.com/photos/1787142/pexels-photo-1787142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
