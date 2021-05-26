@@ -210,29 +210,128 @@ li.move-right {
 	width: 100%;
 	position: relative;
 }
-.food-crop-intro {
+.maize-intro {
     color: #fff;
     background: #ff7300;
     height: 20rem;
     margin-top: 3rem;
     width: 100%;
-	background-image: url('https://images.pexels.com/photos/4260541/pexels-photo-4260541.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-	background-position: bottom;
+	background-image: url('https://ec.europa.eu/jrc/sites/jrcsh/files/styles/normal-responsive/public/maize-losses-climate-extremes_marima_adobestock_25924532.jpeg?itok=swMnMTfz');
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.food-crop-intro .food-crop-header {
+.maize-intro .maize-header {
     font-size: 5rem;
     position: absolute;
     left: 13.5rem;
     padding-top: 2rem;
 }
 
-.food-crop-intro .food-crop-text {
+.maize-intro .maize-text {
     position: absolute;
     left: 13.7rem;
     top: 10rem;
     font-size: 20px;
     width: 70%;
 	color: rgb(226, 226, 226);
+}
+main {
+	position: absolute;
+	top: 31rem;
+	border: 2px solid #000;
+	width: 100%;
+	height: 2500vh;
+}
+.maize-container {
+    /*border: 2px solid red;*/
+    width: 60%;
+    height: auto;
+    position: relative;
+    top: 4rem;
+    /*left: 13.7rem;*/
+    margin: 0 auto;
+    padding: 5rem;
+}
+.maize-container p {
+    font-size: 17.5px;
+    text-align: start;
+    line-height: 2.7rem;
+    color: rgb(24, 24, 24);
+}
+.maize-container .maize-img {
+    background-image: url('https://investigatemidwest.org/wp-content/uploads/2015/09/Paul_Jeschke_185-e1444066427341-1170x700.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin: 3rem 0;
+}
+.maize-container ol {
+    font-size: 17.5px;
+    margin-top: 3.5rem;
+    margin-bottom: 4rem;
+    position: relative;
+    left: 4rem;
+    line-height: 2.7rem;
+}
+.maize-container h3 {
+    font-size: 2.3rem;
+    margin: 4rem 0;
+    color: #db7c00;
+}
+.maize-container .seed-bed-preparation-img {
+    background-image: url('https://www.wur.nl/upload_mm/0/3/6/2c53ce4e-e68d-4a1e-b5eb-66f2e819e242_1_25-44%20maisstrokenfrees04.JPG');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin: 3rem 0;
+}
+.maize-container .drilling-and-sewing-img {
+    background-image: url('https://stmaaprodfwsite.blob.core.windows.net/assets/sites/1/2018/03/050318-Main-image-drill-in-action-c-no-credit.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin: 3rem 0;
+}
+.maize-container .choosing-a-variety-img {
+    background-image: url('https://consumidoresorganicos.org/wp-content/uploads/2019/02/milpa-y-mujer.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin: 3rem 0;
+}
+.maize-container .weed-control-img {
+    background-image: url('https://topsoilpros.com/wp-content/uploads/2019/03/shutterstock_302116274.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin: 3rem 0;
+}
+.maize-container .crop-nutrition-img {
+    background-image: url('https://d1otjdv2bf0507.cloudfront.net/images/Article_Images/ImageForArticle_5446_15837511724232131.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin: 3rem 0;
+}
+.maize-container .pest-diseases-img {
+    background-image: url('https://images.unsplash.com/photo-1611763841081-8efeaf240e53?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin: 3rem 0;
 }
