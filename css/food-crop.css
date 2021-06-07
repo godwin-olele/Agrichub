@@ -554,7 +554,7 @@ main {
 	border-bottom-left-radius: 30px;
 	border-bottom-right-radius: 30px;
 }
-.grid-layout-container .box4 .groundnut-image {
+.grid-layout-container .box4 .peanut-image {
 	background-image: url('https://www.nesd.in/wp-content/uploads/2020/09/51UzLZZlgtL.jpg');
 	background-position: center;
 	background-size: cover;
@@ -566,7 +566,7 @@ main {
 	-moz-box-shadow: 0px 46px 77px -52px rgba(0,0,0,0.75);
 	box-shadow: 0px 26px 20px -22px rgba(0,0,0,0.55);
 }
-.grid-layout-container .box4 .groundnut-image h1 {
+.grid-layout-container .box4 .peanut-image h1 {
 	color: #fff;
 	text-align: center;
 	font-size: 40px;
