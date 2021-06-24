@@ -31,7 +31,7 @@ header {
 	top: 0;
 	left: 0;
 
-    
+
 }
 .footer {
   position:fixed;
@@ -91,7 +91,7 @@ nav {
 	border-top-left-radius: 2rem;
 	border-bottom-left-radius: 2rem;
 	color: rgba(0, 0, 0, 0.733);
-    
+
 }
 .logo .hub {
 	/*background: rgba( 0, 0, 0, 0.35 );
@@ -218,25 +218,25 @@ li.move-right {
 	width: 100%;
 	position: relative;
 }
-.cocoyam-intro {
+.carrot-intro {
     color: #fff;
     background: #ff7300;
     height: 20rem;
     margin-top: 3rem;
     width: 100%;
-	background-image: url('https://furtherafrica.com/content-files/uploads/2020/07/900yam.jpg');
+	background-image: url('https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/08/766x415_Carrot_Allergy-1-732x415.jpg?w=756&h=567');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.cocoyam-intro .cocoyam-header {
+.carrot-intro .carrot-header {
     font-size: 5rem;
     position: absolute;
     left: 13.5rem;
     padding-top: 2rem;
 }
 
-.cocoyam-intro .cocoyam-text {
+.carrot-intro .carrot-text {
     position: absolute;
     left: 13.7rem;
     top: 10rem;
@@ -249,9 +249,9 @@ main {
 	top: 31rem;
 	border: 2px solid #000;
 	width: 100%;
-	height: 2500vh;
+	height: 3900vh;
 }
-.cocoyam-container {
+.carrot-container {
     /*border: 2px solid red;*/
     width: 60%;
     height: auto;
@@ -261,14 +261,14 @@ main {
     margin: 0 auto;
     padding: 5rem;
 }
-.cocoyam-container p {
+.carrot-container p {
     font-size: 17.5px;
     text-align: start;
     line-height: 2.7rem;
     color: rgb(51, 51, 51);
 }
 
-.cocoyam-container ol {
+.carrot-container ol {
     font-size: 17.5px;
     margin-top: 3.5rem;
     margin-bottom: 4rem;
@@ -276,17 +276,17 @@ main {
     left: 4rem;
     line-height: 2.7rem;
 }
-.cocoyam-container h3 {
+.carrot-container h3 {
     font-size: 2.3rem;
     margin: 4rem 0;
     color: #325781;
 }
-.cocoyam-container h1 {
+.carrot-container h1 {
     font-size: 3rem;
     margin: 4rem 0;
 }
-.cocoyam-container .cocoyam-img {
-    background-image: url('https://www.abelandcole.co.uk/media/9867_27592_z.jpg');
+.carrot-container .horse-img {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fres.freestockphotos.biz%2Fpictures%2F17%2F17693-horse-portrait-pv.jpg&f=1&nofb=1");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -294,8 +294,8 @@ main {
     height: 400px;
     margin: 3rem 0;
 }
-.cocoyam-container .taro-plant-img {
-    background-image: url('https://post.healthline.com/wp-content/uploads/2020/03/taro-leaves-leaf-732x549-thumbnail-732x549.jpg');
+.carrot-container .misshapen-img {
+    background-image: url('https://www.perishablenews.com/wp-content/uploads/2019/01/p3-10.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -303,8 +303,8 @@ main {
     height: 400px;
     margin: 3rem 0;
 }
-.cocoyam-container .planting-img {
-    background-image: url('https://images.unsplash.com/photo-1551855350-c86caeaf8707?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+.carrot-container .caring-img {
+    background-image: url('https://www.proflowers.com/blog/wp-content/uploads/2019/07/top-plant-care-tips-15-1.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -312,8 +312,8 @@ main {
     height: 400px;
     margin: 3rem 0;
 }
-.cocoyam-container .site-img {
-    background-image: url('https://gardentutor.com/wp-content/uploads/2019/08/Unless-you-are-already-endowed-with-good-soil-and-a-ready-site-1024x683.jpg');
+.carrot-container .pest-img {
+    background-image: url('https://cdn.shopify.com/s/files/1/0258/5483/6788/articles/393109471389_7582202f-f5f0-4738-ab94-ed0ad8a973b1_1400x.progressive.png.jpg?v=1603273675');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -321,8 +321,8 @@ main {
     height: 400px;
     margin: 3rem 0;
 }
-.cocoyam-container .time-img {
-    background-image: url('https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/880/cached.offlinehbpl.hbpl.co.uk/news/OTM/Clocks-Klaus-Rinke-GettyImages-1229233319.jpg');
+.carrot-container .fresh-carrot-img {
+    background-image: url('https://img1.exportersindia.com/product_images/bc-full/dir_113/3372903/fresh-carrots-1553193.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -330,71 +330,8 @@ main {
     height: 400px;
     margin: 3rem 0;
 }
-.cocoyam-container .planting-and-spacing-img {
-    background-image: url('https://spudsmart.com/wp-content/uploads/2013/04/five-row-beds.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin: 3rem 0;
-}
-.cocoyam-container .container-growing-img {
-    background-image: url('https://www.noble.org/globalassets/images/news/ag-news-and-views/2017/01/container-gardening2.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin: 3rem 0;
-}
-.cocoyam-container .caring-for-taro-img {
-    background-image: url('https://www.ronitbaras.com/wp-content/uploads/2008/06/save-the-planet.jpg.webp');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin: 3rem 0;
-}
-.cocoyam-container .wetting-img {
-    background-image: url('https://plantcaretoday.com/wp-content/uploads/wetting-agent-11302016.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin: 3rem 0;
-}
-.cocoyam-container .care-img {
-    background-image: url('https://content.thriveglobal.com/wp-content/uploads/2018/08/D145_211_647_1200.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin: 3rem 0;
-}
-.cocoyam-container .pest-img {
-    background-image: url('https://gofirstgreen.com/wp-content/uploads/2019/08/controlling-pest-in-you-lanscaping-northern-kentucky-cincinnati-Edited.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin: 3rem 0;
-}
-.cocoyam-container .diseases-img {
-    background-image: url('https://www.treetop-nursery.com/wp-content/uploads/2019/06/pear-rust.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin: 3rem 0;
-}
-.cocoyam-container .harvesting-img {
-    background-image: url('https://blogs.adb.org/sites/blogs/files/31%20May.jpg');
+.carrot-container .carrot-colors-img {
+    background-image: url('https://brightcoalitionblog.files.wordpress.com/2018/05/carrots-1.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
