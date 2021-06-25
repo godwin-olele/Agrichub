@@ -94,7 +94,7 @@ nav {
 	padding: 0.5rem 0 0.5rem 1rem;
 	border-top-left-radius: 2rem;
 	border-bottom-left-radius: 2rem;
-	color: rgba(0, 0, 0, 0.733);
+	color: rgba(255,255,255);
 
 }
 .logo .hub {
@@ -126,7 +126,7 @@ nav {
 
 .nav-list a {
 	display: block;
-	color: #000;
+	color: 000;
 	padding: 0 1.5rem;
 	font-size: 1.7rem;
 	/*text-transform: uppercase;*/
@@ -140,7 +140,7 @@ nav {
 }
 
 .btn {
-	color: rgba(0, 0, 0, 0.733);
+	color: rgba(250,240,230);
 	padding: 1.3rem;
 	display: inline-block;
 	/*background-color: #ff8303;
@@ -164,7 +164,7 @@ nav {
 	display: block;
 	position: absolute;
 	border-top: 3px solid #ff7300;
-	background-color: #191919;
+	background-color: #FFFFF0;
 	z-index: 100;
 	top: 16rem;
 	transition: all 650ms ease;
@@ -329,15 +329,7 @@ main {
     margin: 3rem 0;
 }
 
-.horse-container .breeds-img {
-    background-image: url('https://i.pinimg.com/originals/8f/5a/b1/8f5ab10ea9c1284ee18a4beb2c83df57.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    width: 100%;
-    height: 500px;
-    margin: 3rem 0;
-}
+
 
 .horse-container .feed-img {
     background-image: url("https://www.thesprucepets.com/thmb/1xuNxzTzEupzNfxZHo-I9qB4osE=/1999x1500/filters:no_upscale():max_bytes(150000):strip_icc()/Horse-food-GettyImages-129306763-587af2c33df78c17b635d6f1.jpg");
@@ -348,4 +340,28 @@ main {
     height: 400px;
     margin: 3rem 0;
 }
+
+.horse-container .tack-img {
+    background-image: url("https://www.horsetackdatabase.com/wp-content/uploads/2019/11/tack-wall-1024x727.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin: 3rem 0;
+
+    .iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
