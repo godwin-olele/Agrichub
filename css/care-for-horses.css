@@ -72,11 +72,11 @@ nav {
 
 .logo {
 	font-size: 2.5rem;
-<<<<<<< HEAD
+
 	color: #fff;
-=======
+
 	/*color: #fff;*/
->>>>>>> f4ceaff1ba1810bcdf7be6da24df2d59fe0b0e0c
+
 	padding: 0.5rem 1.3rem;
 	display: inline-block;
 	letter-spacing: 0.2rem;
@@ -222,17 +222,13 @@ li.move-right {
 	width: 100%;
 	position: relative;
 }
-<<<<<<< HEAD
+
 .horse-intro {
-=======
-.carrot-intro {
->>>>>>> f4ceaff1ba1810bcdf7be6da24df2d59fe0b0e0c
     color: #fff;
     background: #ff7300;
     height: 20rem;
     margin-top: 3rem;
     width: 100%;
-<<<<<<< HEAD
 	background-image: url('https://cdn0.wideopenpets.com/wp-content/uploads/2016/05/bigstock-Large-herd-of-beautiful-horses-119341082.jpg');
 	background-position: center
 	;
@@ -240,25 +236,17 @@ li.move-right {
 	background-size: cover;
 }
 .horse-intro .horse-header {
-=======
-	background-image: url('https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/08/766x415_Carrot_Allergy-1-732x415.jpg?w=756&h=567');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-.carrot-intro .carrot-header {
->>>>>>> f4ceaff1ba1810bcdf7be6da24df2d59fe0b0e0c
     font-size: 5rem;
     position: absolute;
     left: 13.5rem;
     padding-top: 2rem;
 }
 
-<<<<<<< HEAD
+
 .horse-intro .horse-text {
-=======
-.carrot-intro .carrot-text {
->>>>>>> f4ceaff1ba1810bcdf7be6da24df2d59fe0b0e0c
     position: absolute;
     left: 13.7rem;
     top: 10rem;
@@ -273,11 +261,7 @@ main {
 	width: 100%;
 	height: 3900vh;
 }
-<<<<<<< HEAD
 .horse-container {
-=======
-.carrot-container {
->>>>>>> f4ceaff1ba1810bcdf7be6da24df2d59fe0b0e0c
     /*border: 2px solid red;*/
     width: 60%;
     height: auto;
@@ -287,22 +271,14 @@ main {
     margin: 0 auto;
     padding: 5rem;
 }
-<<<<<<< HEAD
 .horse-container p {
-=======
-.carrot-container p {
->>>>>>> f4ceaff1ba1810bcdf7be6da24df2d59fe0b0e0c
     font-size: 17.5px;
     text-align: start;
     line-height: 2.7rem;
     color: rgb(51, 51, 51);
 }
 
-<<<<<<< HEAD
 .horse-container ol {
-=======
-.carrot-container ol {
->>>>>>> f4ceaff1ba1810bcdf7be6da24df2d59fe0b0e0c
     font-size: 17.5px;
     margin-top: 3.5rem;
     margin-bottom: 4rem;
@@ -310,113 +286,41 @@ main {
     left: 4rem;
     line-height: 2.7rem;
 }
-<<<<<<< HEAD
+
 .horse-container h3 {
-=======
-.carrot-container h3 {
->>>>>>> f4ceaff1ba1810bcdf7be6da24df2d59fe0b0e0c
     font-size: 2.3rem;
     margin: 4rem 0;
     color: #325781;
-}
-<<<<<<< HEAD
+    }
 .horse-container h1 {
     font-size: 3rem;
     margin: 4rem 0;
 }
 .horse-container .horse-img {
     background-image: url("https://www.zastavki.com/pictures/originals/2013/Animals___Horses_Portrait_of_a_horse_053871_.jpg");
-=======
-.carrot-container h1 {
     font-size: 3rem;
     margin: 4rem 0;
-}
-.carrot-container .horse-img {
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fres.freestockphotos.biz%2Fpictures%2F17%2F17693-horse-portrait-pv.jpg&f=1&nofb=1");
->>>>>>> f4ceaff1ba1810bcdf7be6da24df2d59fe0b0e0c
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
     width: 100%;
-<<<<<<< HEAD
     height: 300px;
     margin: 2rem 0;
 }
-.horse-container .misshapen-img {
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstablemanagement.com%2F.image%2Ft_share%2FMTQ1NDU4NTA1NDA2MTYyNzA1%2Ftips-on-purchasing-large-round-bales-of-hay-for-horses-promo-image.jpg&f=1&nofb=1");
-=======
-    height: 400px;
-    margin: 3rem 0;
-}
-.carrot-container .misshapen-img {
-    background-image: url('https://www.perishablenews.com/wp-content/uploads/2019/01/p3-10.jpg');
->>>>>>> f4ceaff1ba1810bcdf7be6da24df2d59fe0b0e0c
+
+.horse-container .grooming-img {
+    background-image: url("https://128119-368722-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2016/02/HR0241Bob-Atkins-1024x681.jpg");
+    font-size: 3rem;
+    margin: 4rem 0;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
     width: 100%;
-    height: 400px;
-<<<<<<< HEAD
+    height: 300px;
     margin: 2rem 0;
 }
-.horse-container .caring-img {
-=======
-    margin: 3rem 0;
-}
-.carrot-container .caring-img {
->>>>>>> f4ceaff1ba1810bcdf7be6da24df2d59fe0b0e0c
-    background-image: url('https://www.proflowers.com/blog/wp-content/uploads/2019/07/top-plant-care-tips-15-1.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin: 3rem 0;
-}
-<<<<<<< HEAD
-.horse-container .pest-img {
-=======
-.carrot-container .pest-img {
->>>>>>> f4ceaff1ba1810bcdf7be6da24df2d59fe0b0e0c
-    background-image: url('https://cdn.shopify.com/s/files/1/0258/5483/6788/articles/393109471389_7582202f-f5f0-4738-ab94-ed0ad8a973b1_1400x.progressive.png.jpg?v=1603273675');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin: 3rem 0;
-}
-<<<<<<< HEAD
-.horse-container .fresh-carrot-img {
-=======
-.carrot-container .fresh-carrot-img {
->>>>>>> f4ceaff1ba1810bcdf7be6da24df2d59fe0b0e0c
-    background-image: url('https://img1.exportersindia.com/product_images/bc-full/dir_113/3372903/fresh-carrots-1553193.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin: 3rem 0;
-}
-<<<<<<< HEAD
-.horse-container .carrot-colors-img {
-=======
-.carrot-container .carrot-colors-img {
->>>>>>> f4ceaff1ba1810bcdf7be6da24df2d59fe0b0e0c
-    background-image: url('https://brightcoalitionblog.files.wordpress.com/2018/05/carrots-1.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin: 3rem 0;
-}
-<<<<<<< HEAD
-
-.horse-container .planting-img {
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstablemanagement.com%2F.image%2Ft_share%2FMTQ1NDU4NTA1NDA2MTYyNzA1%2Ftips-on-purchasing-large-round-bales-of-hay-for-horses-promo-image.jpg&f=1&nofb=1"
-);
+.horse-container .training-img {
+    background-image: url('https://www.horseandrideruk.com/wp-content/uploads/2018/10/WEB_Poles-1000x670.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -425,5 +329,23 @@ main {
     margin: 3rem 0;
 }
 
-=======
->>>>>>> f4ceaff1ba1810bcdf7be6da24df2d59fe0b0e0c
+.horse-container .breeds-img {
+    background-image: url('https://i.pinimg.com/originals/8f/5a/b1/8f5ab10ea9c1284ee18a4beb2c83df57.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin: 3rem 0;
+}
+
+.horse-container .feed-img {
+    background-image: url("https://www.thesprucepets.com/thmb/1xuNxzTzEupzNfxZHo-I9qB4osE=/1999x1500/filters:no_upscale():max_bytes(150000):strip_icc()/Horse-food-GettyImages-129306763-587af2c33df78c17b635d6f1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin: 3rem 0;
+}
+
