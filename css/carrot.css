@@ -136,7 +136,7 @@ nav {
 }
 
 .btn {
-	color: rgba(0, 0, 0, 0.733);
+	color: rgba(0,0,0);
 	padding: 1.3rem;
 	display: inline-block;
 	/*background-color: #ff8303;
@@ -213,7 +213,7 @@ li.move-right {
 
 /* food crop */
 .overlay {
-	background: rgba( 0, 0, 0, 0.65 );
+	background: rgba( 250,240,230 );
 	height: 20rem;
 	width: 100%;
 	position: relative;

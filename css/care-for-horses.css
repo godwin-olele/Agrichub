@@ -72,7 +72,11 @@ nav {
 
 .logo {
 	font-size: 2.5rem;
+
+	color: #fff;
+
 	/*color: #fff;*/
+
 	padding: 0.5rem 1.3rem;
 	display: inline-block;
 	letter-spacing: 0.2rem;
@@ -90,7 +94,7 @@ nav {
 	padding: 0.5rem 0 0.5rem 1rem;
 	border-top-left-radius: 2rem;
 	border-bottom-left-radius: 2rem;
-	color: rgba(0, 0, 0, 0.733);
+	color: rgba(255,255,255);
 
 }
 .logo .hub {
@@ -122,7 +126,7 @@ nav {
 
 .nav-list a {
 	display: block;
-	color: #000;
+	color: 000;
 	padding: 0 1.5rem;
 	font-size: 1.7rem;
 	/*text-transform: uppercase;*/
@@ -136,7 +140,7 @@ nav {
 }
 
 .btn {
-	color: rgba(0, 0, 0, 0.733);
+	color: rgba(250,240,230);
 	padding: 1.3rem;
 	display: inline-block;
 	/*background-color: #ff8303;
@@ -160,7 +164,7 @@ nav {
 	display: block;
 	position: absolute;
 	border-top: 3px solid #ff7300;
-	background-color: #191919;
+	background-color: #FFFFF0;
 	z-index: 100;
 	top: 16rem;
 	transition: all 650ms ease;
@@ -218,25 +222,31 @@ li.move-right {
 	width: 100%;
 	position: relative;
 }
-.carrot-intro {
+
+.horse-intro {
     color: #fff;
     background: #ff7300;
     height: 20rem;
     margin-top: 3rem;
     width: 100%;
-	background-image: url('https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/08/766x415_Carrot_Allergy-1-732x415.jpg?w=756&h=567');
-	background-position: center;
+	background-image: url('https://cdn0.wideopenpets.com/wp-content/uploads/2016/05/bigstock-Large-herd-of-beautiful-horses-119341082.jpg');
+	background-position: center
+	;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.carrot-intro .carrot-header {
+.horse-intro .horse-header {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
     font-size: 5rem;
     position: absolute;
     left: 13.5rem;
     padding-top: 2rem;
 }
 
-.carrot-intro .carrot-text {
+
+.horse-intro .horse-text {
     position: absolute;
     left: 13.7rem;
     top: 10rem;
@@ -251,7 +261,7 @@ main {
 	width: 100%;
 	height: 3900vh;
 }
-.carrot-container {
+.horse-container {
     /*border: 2px solid red;*/
     width: 60%;
     height: auto;
@@ -261,14 +271,14 @@ main {
     margin: 0 auto;
     padding: 5rem;
 }
-.carrot-container p {
+.horse-container p {
     font-size: 17.5px;
     text-align: start;
     line-height: 2.7rem;
     color: rgb(51, 51, 51);
 }
 
-.carrot-container ol {
+.horse-container ol {
     font-size: 17.5px;
     margin-top: 3.5rem;
     margin-bottom: 4rem;
@@ -276,17 +286,41 @@ main {
     left: 4rem;
     line-height: 2.7rem;
 }
-.carrot-container h3 {
+
+.horse-container h3 {
     font-size: 2.3rem;
     margin: 4rem 0;
     color: #325781;
-}
-.carrot-container h1 {
+    }
+.horse-container h1 {
     font-size: 3rem;
     margin: 4rem 0;
 }
-.carrot-container .horse-img {
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fres.freestockphotos.biz%2Fpictures%2F17%2F17693-horse-portrait-pv.jpg&f=1&nofb=1");
+.horse-container .horse-img {
+    background-image: url("https://www.zastavki.com/pictures/originals/2013/Animals___Horses_Portrait_of_a_horse_053871_.jpg");
+    font-size: 3rem;
+    margin: 4rem 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    height: 300px;
+    margin: 2rem 0;
+}
+
+.horse-container .grooming-img {
+    background-image: url("https://128119-368722-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2016/02/HR0241Bob-Atkins-1024x681.jpg");
+    font-size: 3rem;
+    margin: 4rem 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 100%;
+    height: 300px;
+    margin: 2rem 0;
+}
+.horse-container .training-img {
+    background-image: url('https://www.horseandrideruk.com/wp-content/uploads/2018/10/WEB_Poles-1000x670.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -294,8 +328,11 @@ main {
     height: 400px;
     margin: 3rem 0;
 }
-.carrot-container .misshapen-img {
-    background-image: url('https://www.perishablenews.com/wp-content/uploads/2019/01/p3-10.jpg');
+
+
+
+.horse-container .feed-img {
+    background-image: url("https://www.thesprucepets.com/thmb/1xuNxzTzEupzNfxZHo-I9qB4osE=/1999x1500/filters:no_upscale():max_bytes(150000):strip_icc()/Horse-food-GettyImages-129306763-587af2c33df78c17b635d6f1.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -303,39 +340,28 @@ main {
     height: 400px;
     margin: 3rem 0;
 }
-.carrot-container .caring-img {
-    background-image: url('https://www.proflowers.com/blog/wp-content/uploads/2019/07/top-plant-care-tips-15-1.jpg');
+
+.horse-container .tack-img {
+    background-image: url("https://www.horsetackdatabase.com/wp-content/uploads/2019/11/tack-wall-1024x727.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
     width: 100%;
     height: 400px;
     margin: 3rem 0;
+
+    .iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
 }
-.carrot-container .pest-img {
-    background-image: url('https://cdn.shopify.com/s/files/1/0258/5483/6788/articles/393109471389_7582202f-f5f0-4738-ab94-ed0ad8a973b1_1400x.progressive.png.jpg?v=1603273675');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin: 3rem 0;
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-.carrot-container .fresh-carrot-img {
-    background-image: url('https://img1.exportersindia.com/product_images/bc-full/dir_113/3372903/fresh-carrots-1553193.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin: 3rem 0;
-}
-.carrot-container .carrot-colors-img {
-    background-image: url('https://brightcoalitionblog.files.wordpress.com/2018/05/carrots-1.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    width: 100%;
-    height: 400px;
-    margin: 3rem 0;
-}
+
+
