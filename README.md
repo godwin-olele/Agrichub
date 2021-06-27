@@ -1,14 +1,45 @@
-AgriculHub
-AgriculHub is a place for agriculturist, a place where small scale and large scale farmer collaborate .
+# Agrichub
 
-Willing to Contribute?
-Front end :
+Agrichub is a platform that help farmers and gardeners all around the globe by embedding all things related to agriculture into one single platform.
+
+## Technology Used
+
+### Front End:
+```
+    HTML
+    CSS
+    JavaScript
+```
+
+### Back End
+```
+    Comming soon...
+```
+
+### Future features
+
+    Chat-Room: helps farmers and gardeners collaborate and discuss.
+    
+    News-page: helps to be aware of whats going on in the market and more.
+    
+    Wheather Api: helps in letting them know about the wheather condition in the environment.
+    
+
+## Contribute to Agrichub
+
+```
    Fork this repository
-Clone the repository
-Open a terminal and run the following git command:
-   git clone 
-Change to the repository directory on your computer (if you are not already there):
-   cd Agriculhub
-Open repo in local machine by typing this in terminal
-  code .
-Now you are good to go...
+```
+```
+   Clone repository ( git clone <URL> )
+```
+```
+   Change-Directory to this repository ( cd agrichub )
+```
+```
+   code .
+```
+
+Good to go...
+
+#### Note: if you encounter any error while going through the above process, trying sending me a message via EMAIl ( godwinolele10@gmail.com )
