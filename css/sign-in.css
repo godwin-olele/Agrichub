@@ -131,6 +131,10 @@ body {
   justify-content: right;
 }
 
+.btn-primary {
+  background-color: #3cb371;
+}
+
 .btn-google {
   color: white;
   background-color: #ea4335;
@@ -144,11 +148,7 @@ body {
 .new-to-agrichub {
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(207, 207, 207, 0.692);
-  border-radius: 7px;
-
   margin: 1em auto 0 auto;
-
   padding: 0 10px;
   color: rgb(88, 88, 88);
 }
@@ -158,6 +158,9 @@ body {
 }
 .new-to-agrichub a:hover {
   text-decoration: underline;
+}
+.new-to-agrichub p {
+  text-align: center;
 }
 /* Fallback for Edge
 -------------------------------------------------- */
