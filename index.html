@@ -11,131 +11,65 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet/less" type="text/css" href="styles.less" />
 </head>
 <body>
 
-    <div class="full-bg">
-        <div class="overlay">
-
-            <a href="/index.html" class="back-btn" id="back-btn" style="display: none; color: #fff"><i class="fas fa-arrow-left">&nbsp&nbsp</i>Back</a>
-
-
-        <div class="brand-title-mobile" id="brand-title-mobile"><img src="https://img.icons8.com/plasticine/40/000000/leaf.png"/>Agriculhub</div>
-        <!----- navbar ----->
-        <nav class="navbar">
-           <div class="brand-title"><img src="https://img.icons8.com/plasticine/45/000000/leaf.png"/>Agrichub</div>
-           <a href="#" class="toggle-button">
-               <span class="bar"></span>
-               <span class="bar"></span>
-               <span class="bar"></span>
-           </a>
-           <div class="navbar-links">
-               <ul>
-                   <li class="nav"><a href="./home.html">Home</a></li>
-                   <li class="nav"><a href="#">News</a></li>
-                   <li class="nav"><a href="#">Market</a></li>
-                   <li class="nav"><a href="#">Explore</a></li>
-                   <li class="nav"><a href="#">Chat Room</a></li>
-                   <li class="nav"><a href="#">How to?</a></li>
-                   <li class="about-nav"><a href="#">About</a></li>
-               </ul>
-           </div>
-        </nav>
-
-                
-
-
-
-
-        <main class="main-container">
-            <div class="container">
-
-                <div class="illustration">
-                    <div class="page-title">
-
-                    </div>
-                </div>
-    
-                  
-                <div class="sign-in_sign-up_container" id="sign-in_sign-up_container">
-                     <h2 class="sign-up-header">Sign up</h2>
-                     <h1>A Place For Agriculturist</h1><br>
-                     <p>Where small-scale and large-scale
-                        farmers and Gardeners connect and collaborate.</p> 
-                        <p class="👍">Join the community!</p>
-                     <form class="sign-up-input-field">
-                        <label for="sign-up">Email address</label>
-                        <input type="email" id="sign-up" placeholder="Enter your email">
-                        <br>
-                        <label for="password">Set password</label>
-                        <input type="password" name="password" id="password" placeholder="Enter password">
-                        <button class="sign-up-btn">Sign up</button>
-                        <small class="sign-in"> Already have an account? <a href="./sign-in.html">Sign In</a></small>
-                     </form>
-               </div>
-
+    <header>
+        <div class="left-container">
+            <div class="brand-name">
+                <h1>Agric<span>Hub.</span></h1>
             </div>
-
-            <div class="sign-in_sign-up_container_mobile">
-                <a href="/sign-in.html" class="sign-in-btn" id="sign-in-btn">Sign in</a>
-                <div class="sign-up-btn" id="sign-up-btn">
-                    <div class="box">
-                    <form class="form-container-mobile" id="form-container-mobile">
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" >
-                        </div>
-                        <div>
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password" >
-                        </div>
-                    </form>
-                    </div>
-                    <div class="sign-up-text-container">
-                        <p class="sign-up" id="sign-up">Sign up</p><button type="submit" class="sign-up-button-mobile" id="sign-up-button-mobile"><i class="fas fa-arrow-circle-right"></i></button>
-                    </div>
-                    <br>
-                    <div class="already-have-an-acc" id="already-have-an-acc">
-                        <small class="sign-in-mobile"> Already have an account? <a href="./sign-in.html" class="sign-in-text">Sign In</a></small>
-                    </div>
-
-                </div>
+            <div class="intro">
+                <h1>Sign up and <br> become a member</h1>
+                <p>A central hub where farmers and gardeners find amazing topics, articles and exploration regarding crop and livestock farming.</p>
             </div>
-
-           
-        </main>
- 
-    
-    <!--<div class="intro">
-        <div class="intro-text">
-            <h1 class="hide">
-                <span class="text">Creating innovation</span>
-            </h1>
-            <h1 class="hide">
-                <span class="text">For Everyday</span>
-            </h1>
-            <h1 class="hide">
-                <span class="text">Farmers.</span>
-            </h1>
+                <div class="buttons-mobile">
+                    <button class="sign-up-mobile" type="submit">Sign Up</button><br><br>
+                    <button class="sign-in-mobile" type="submit">I have an account</button>
+                </div>
+            <div class="illustration">
+                <img src="/images/undraw_unlock_24mb.svg" alt="svg-illustration">
+            </div>
         </div>
-    </div>
+        <div class="right-container">
+            <h1>Create Account</h1>
+            <div class="social-media-clickable-icons">
+                <div class="google">
+                    <a href="#"><img src="https://img.icons8.com/material-sharp/30/000000/google-logo.png"/></a>
+                </div>
+                <div class="facebook">
+                    <a href="#"><img src="https://img.icons8.com/ios/40/000000/facebook-new.png"/></a>
+                </div>
+                <div class="twitter">
+                    <a href="#"><img src="https://img.icons8.com/ios-glyphs/35/000000/twitter--v1.png"/></a>
+                </div>
+            </div>
+            <div class="or-register">or use your email for registration:</div>
+            <form>
+                <input type="text" name="name" id="name" placeholder="Name"><br><br>
+                <input type="email" name="email" id="email" placeholder="Email"><br><br>
+                <input type="password" name="password" id="password" placeholder="Password"><br><br>
+                <div class="terms">I agree to the <span>Terms</span> and <span>Privacy Policy</span>.</div>
+                <div class="buttons">
+                    <button class="sign-up" type="submit">Sign Up</button>
+                    <button class="sign-in" type="submit">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </header>
+        
 
-    <div class="slider"></div>-->
+        
 
-
-
-    </div>
-    </div>
-
-
-
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
-    <script src="./script/app.js"></script>
+    <script src="./script/index.js"></script>
 
-<footer>
-    footer
-</footer>
+
 
 </body>
 
