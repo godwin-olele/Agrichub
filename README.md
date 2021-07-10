@@ -1,6 +1,6 @@
 # Agrichub
 
-Agrichub is a platform that help farmers and gardeners all around the globe by embedding all things related to agriculture into one single platform.
+Agrichub is a central hub where farmers and gardeners find amazing topics, articles and exploration regarding crops,livestocks farming and anything related to agriculture.
 
 ## Technology Used
 

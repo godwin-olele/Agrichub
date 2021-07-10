@@ -1,0 +1,879 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/*
+.back-btn {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+.back-btn {
+    text-decoration: none;
+}
+.sign-in_sign-up_container_mobile {
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sign-in_sign-up_container_mobile .sign-in-btn {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+}
+
+.sign-in_sign-up_container_mobile .sign-up-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: green;
+    padding: 0px 40px;
+    padding-top: 10px;
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 50px;
+    height: 60px;
+}
+.sign-in_sign-up_container_mobile .form-container-mobile {
+    display: none;
+}
+.sign-in_sign-up_container_mobile .sign-up-btn .sign-up {
+    float: left;
+}
+.sign-in_sign-up_container_mobile .sign-up-btn .sign-up-button-mobile {
+    font-size: 2rem;
+    float: left;
+    margin-left: 0.5em;
+    border: none;
+    background-color: transparent;
+    color: green;
+}
+.sign-in_sign-up_container_mobile .already-have-an-acc {
+    display: none;
+    float: left;
+}
+.sign-in_sign-up_container_mobile .already-have-an-acc .sign-in-mobile {
+    color: rgba(0, 0, 0, 0.61);
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 0;
+    padding-left: 20px; 
+}
+.sign-in_sign-up_container_mobile .already-have-an-acc .sign-in-text {
+    color: #f38200;
+}
+.form-container-mobile {
+    position: relative;
+}
+.sign-up-btn .form-container-mobile input{
+    width: 100%;
+    height: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 30px; 
+    /*padding: 10px;*
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-bottom: 0.3px solid rgba(153, 153, 153, 0.795);
+}
+.box .form-container-mobile div {
+    position: relative;
+}
+.box .form-container-mobile div label {
+    position: relative;
+    top: 0px;
+    color: rgb(80, 80, 80);
+    transition: .5s; 
+    pointer-events: none;
+}
+
+/*
+.sign-up-btn .form-container-mobile label {
+    position: absolute;
+    pointer-events: none;
+    color: #999;
+    transition: .5s;
+    top: 10px;
+}
+.sign-up-btn .form-container-mobile input:focus ~ label {
+   top: -12px;
+}
+
+/* mobile form field 
+.mobile-form-field {
+  margin-top: 40px;
+}
+/*.email, .password {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 7px;
+    color:rgba(0, 0, 0, 0.822);
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}*
+.sign-in_sign-up_container_mobile .sign-in-btn {
+    position: absolute;
+    left: 50px;
+    font-size: 1.3rem;
+}
+.sign-up-header {
+    display: none;
+}
+.sign-in_sign-up_container {
+    width: 80vw;
+    height: 30vh;
+    margin: 0 auto;
+    position: relative;
+    top: 5em;
+}
+.sign-in_sign-up_container h1 {
+    color: #de7900;    
+    text-align: start;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+.sign-in_sign-up_container p {
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    text-align: start;
+    background: rgba( 0, 0, 0, 0.25 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.sign-in_sign-up_container .👍 {
+    margin-top: 2em;
+    background: rgba( 0, 0, 0, 0.25 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    position: absolute;
+    padding: 10px 10px;
+}
+
+.sign-up-input-field  {
+    margin-top: 3em;
+    display: none;
+}
+
+.intro {
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+}
+.intro-text {
+    color: rgb(148, 218, 142);
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.5rem;
+}
+.slider {
+    background-image: url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=682&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+
+.hide {
+    background: #000;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+
+.full-bg {
+    background-image: url('https://images.unsplash.com/photo-1560252811-2ab1e44ce202?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background: rgba(0, 0, 0, 0.75);
+}
+ 
+.nav {
+    display: none;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    color: #fff;
+    position: relative;
+    top: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 70px;
+    display: none;
+}
+.brand-title-mobile {
+    font-size: 1.5rem;
+    margin: .5em auto;
+    font-family: 'Neucha', cursive;
+    color: #fff;
+    text-align: center;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    font-family: 'Neucha', cursive;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    margin-left: 3rem;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: .5rem 0rem;
+    display: block;
+}
+
+.navbar-links li .nav:hover {
+    color:#ffb037;
+    transition: all .3s;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .full-bg {
+        background-image: url('https://images.unsplash.com/photo-1471193945509-9ad0617afabf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .overlay {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom:0;
+        background: rgba(0, 0, 0, 0.30);
+    }
+    .sign-in_sign-up_container h1 {
+        color: #de7900;    
+        text-align: start;
+        font-family: 'Rubik', sans-serif;
+        font-weight: bolder;
+        font-size: 2.5rem;
+    }
+    .sign-in_sign-up_container p {
+        color: rgba(255, 255, 255, 0.87);
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        text-align: start;
+        background: rgba( 17, 255, 1, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 5.5px );
+        -webkit-backdrop-filter: blur( 5.5px );
+        border-radius: 10px;
+        padding: 10px 10px;
+        height: 130px;
+        display: flex;
+        align-items: center;
+    }
+    .sign-in_sign-up_container .👍 {
+        margin-top: 2em;
+        background: rgba( 17, 255, 1, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 5.5px );
+        -webkit-backdrop-filter: blur( 5.5px );
+        border-radius: 10px;
+        position: absolute;
+        padding: 10px 10px;
+        height: 50px;
+    }
+    .sign-in_sign-up_container {
+        width: 500px;
+        height: 30vh;
+        margin: 0 auto;
+        position: relative;
+        top: 10em;
+    }
+      
+}
+
+@media screen and (max-width: 900px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 999;
+        margin: 0;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 50%;
+        height: 100vh;
+        background-color: #de7900;
+        position: absolute;
+        right: 0;
+    }
+
+    .navbar-links li {
+        text-align: end;
+    }
+
+    .navbar-links li a {
+        padding: 1rem 1rem;
+        color: #000;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+/*
+main {
+    padding: 20px;
+}*
+
+.sign-in_sign-up_container {
+    width: 80vw;
+    height: 40vh;
+    margin: 0 auto;
+    position: relative;
+    top: 8em;
+}
+.sign-in_sign-up_container h1 {
+    color: #de7900;    
+    text-align: start;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+.sign-in_sign-up_container p {
+    color: rgba(255, 255, 255, 0.87);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    text-align: start;
+}
+
+.sign-up-input-field  {
+    margin-top: 3em;
+    display: none;
+}
+
+.sign-up-input-field input{
+    width: 100%;
+    position: relative;
+    padding: 10px 15px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color:rgba(0, 0, 0, 0.822);
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+}
+.sign-up-input-field .sign-up-btn {
+    margin: 1em auto 1em auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 15px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    background: #218d3b;
+    color: #fff;
+    cursor: pointer;
+}
+.sign-up-input-field .sign-up-btn:hover {
+    background: #28a745;
+    transition: all 0.5s;
+}
+
+
+.sign-up-input-field p{
+    color: #fff;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 2em auto 1em auto;
+    display: flex;
+    justify-content: center;
+    border-color: rgba(0, 128, 0, 0.459);
+    text-decoration: none;
+    width: 7em;
+}
+.sign-up-input-field a:hover {
+    /*background-image: url('https://images.pexels.com/photos/1787142/pexels-photo-1787142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');*
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+    .brand-title {
+        font-size: 1.3rem;
+        margin: .5rem .5rem .5rem 2.5rem;
+    }
+
+    .navbar-links ul{
+        position: absolute;
+        top: 4em;
+        padding: 2em 1em 0 1em;
+    }
+    
+
+}
+
+@media only screen and (max-width: 350px) {
+    .brand-title {
+        font-size: 1.1rem;
+        margin: .5rem .5rem .5rem 1.5rem;
+    }
+
+    .sign-in_sign-up_container {
+        width: 80vw;
+        height: 40vh;
+        margin: 0 auto;
+        position: relative;
+        top: 4em;
+    }
+    
+    .sign-in_sign-up_container h1 {
+        color: #de7900;    
+        font-family: 'Rubik', sans-serif;
+        font-weight: bolder;
+        font-size: 1.3rem;
+    }
+    .sign-in_sign-up_container p {
+        color: rgba(255, 255, 255, 0.87);
+        font-size: 1rem;
+        line-height: 1.7rem;
+        
+    }
+}
+/*
+@media only screen and (max-width: 350px) {
+
+    .navbar {
+        top: .5rem;
+    }
+    .toggle-button {
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+    .toggle-button .bar {
+        height: 2px;
+        width: 90%;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+}
+*/
+/* Medium devices (landscape tablets, 768px and up) *
+@media only screen and (min-width: 768px) {
+
+
+    .sign-in_sign-up_container {
+        width: 80vw;
+        height: 40vh;
+        margin: 0 auto;
+        position: relative;
+        top: 12em;
+    }
+    .sign-in_sign-up_container h1 {
+        color: #de7900;    
+        text-align: start;
+        font-family: 'Rubik', sans-serif;
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+    .sign-in_sign-up_container p {
+        color: rgba(255, 255, 255, 0.678);
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+        text-align: start;
+    }
+
+    .sign-up-input-field  {
+        margin-top: 3em;
+        
+    }
+    
+    .sign-up-input-field input{
+        margin: 0 auto;
+        width: 70%;
+        position: relative;
+        padding: 13px 15px;
+        font-size: 1.3rem;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        color:rgba(0, 0, 0, 0.822);
+        font-family: 'Rubik', sans-serif;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+    }
+    .sign-up-input-field .sign-up-btn {
+        margin: 1em auto 1em auto;
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        position: relative;
+        padding: 15px 15px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Rubik', sans-serif;
+        
+        font-size: 1.3rem;
+        background: rgb(0, 94, 0);
+        color: #fff;
+        cursor: pointer;
+    }
+    .sign-up-input-field .sign-up-btn:hover {
+        background: rgb(0, 128, 0);
+        transition: all 0.5s;
+    }
+    /*
+    .sign-up-input-field a{
+        color: #fff;
+        outline: none;
+        padding: 5px 20px;
+        border-radius: 20px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.2rem;
+        cursor: pointer;
+        margin: 2em auto 1em auto;
+        display: flex;
+        justify-content: center;
+        border-color: rgba(0, 128, 0, 0.459);
+        text-decoration: none;
+        width: 7em;
+        font-weight: bold;
+    }*
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) *
+@media only screen and (min-width: 1200px) {
+
+    .sign-in_sign-up_container_mobile {
+        display: none;
+    }
+
+    .sign-up-input-field  {
+        margin-top: 0;
+        display: block;
+    }
+
+
+    .brand-title-mobile {
+        font-size: 1.5rem;
+        margin: .5em auto;
+        font-family: 'Neucha', cursive;
+        color: #fff;
+        text-align: center;
+        display: none;
+    }
+    .navbar {
+        display: block;
+        
+    }
+
+    .brand-title {
+        font-family: 'Neucha', cursive;
+        font-size: 2rem;
+        margin: 0.5rem;
+    }
+    
+    .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-nav {
+        border: 2px solid #ffb037;
+        padding: 0 20px; 
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+
+.container {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10em;
+    width: 60rem;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 50px;
+    box-shadow: 10px 10px 71px 0px rgba(0,0,0,0.75);
+    /*box-shadow: 17px 21px 31px 11px rgba(0,0,0,0.75);*
+} 
+.sign-up-header {
+    display: block;
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 2em;
+    margin-left: 1.2em;
+    margin-bottom: .5em;
+    color: rgb(41, 41, 41);
+}
+
+.sign-up-input-field .sign-in {
+    color: #000;
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+}
+.sign-in_sign-up_container {
+    width: 40vw;
+    height: 470px;
+    position: relative;
+    top: 0;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: #fff;
+    padding: 10px;
+    display: block;
+}
+.illustration {
+    width: 60vw;
+    height: 470px;
+    position: relative;
+    border-radius: 40px;
+    padding: 10px;
+    background-image: url('https://images.pexels.com/photos/5529606/pexels-photo-5529606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*box-shadow: 22px 3px 77px -23px rgba(0,0,0,0.75);*
+
+}
+.page-title {
+    width: 30vw;
+    height: 300px;
+    background: rgba( 0, 0, 0, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    display: none;
+}
+
+
+.sign-in_sign-up_container h1 {
+    color: #ff8c00;    
+    text-align: start;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    display: none;
+}
+.sign-in_sign-up_container p {
+    color: rgba(255, 255, 255, 0.678);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: start;
+    display: none;
+}
+
+
+label {
+    color: #000;
+    text-align: start;
+    font-size: 1rem;
+    position: relative;
+    left: 3em;
+}
+
+.sign-up-input-field input{
+    margin-top: .5em;
+    width: 74%;
+    position: relative;
+    padding: 9px 15px;
+    font-size: .9rem;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 7px;
+    color:rgba(0, 0, 0, 0.822);
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up-input-field .sign-up-btn {
+    /*margin: 2em 0 0 5em;*
+    display: flex;
+    justify-content: center;
+    width: 74%;
+    position: relative;
+    padding: 13px 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: rgb(70 ,134 ,108);;
+    color: #fff;
+    cursor: pointer;
+}
+.sign-up-input-field .sign-up-btn:hover {
+    background: rgb(68, 155, 120);;
+    transition: all 0.5s;
+}
+
+.sign-up-input-field p {
+    color: #000;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2.5em;
+}
+.sign-up-input-field p a {
+    color: blue;
+    text-decoration: none;
+}
+.sign-up-input-field p a:hover {
+    color: rgb(11, 114, 211);
+    text-decoration: underline;
+}
+.full-bg {
+    /*background-image: url('https://images.pexels.com/photos/4894594/pexels-photo-4894594.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');*
+    background: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120vh;
+    display: block;
+    background-color: #289672;
+}
+
+.overlay {
+    position: absolute;
+    height: 120vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0, 0);
+}
+
+
+}*/
