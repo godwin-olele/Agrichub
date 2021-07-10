@@ -38,6 +38,7 @@ header {
 .illustration img {
     width: 80%;
     margin-top: 3em;
+    margin-left: 2em;
 }
 .right-container {
     background-color: #ffffff;
