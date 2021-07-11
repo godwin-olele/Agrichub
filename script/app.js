@@ -32,15 +32,12 @@ signUpBtn.addEventListener('click', () => {
   
   const styles = {
     position: 'absolute',
-   /* top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',*/
     boxSizing: 'border-box',
     boxShadow: '0 5px 10px rgba(0,0,0,2)',
     width: '100%',
-    height: '60vh',
-    borderTopRightRadius: '50px',
-    padding: '50px 30px'
+    height: '90vh',
+    padding: '50px 30px',
+    backgroundColor: '#fff'
   }
   
   Object.assign(signUpBtn.style, styles);
