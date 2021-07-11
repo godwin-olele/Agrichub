@@ -25,8 +25,8 @@ signupBtn.addEventListener("click", function(){
         bottom: '0',
         boxSizing: 'border-box',
         width: '100%',
-        height: '70vh',
-        padding: '50px 30px',
+        height: '470px',
+        padding: '20px 30px',
         backgroundColor: '#fff',
         borderRadius: '70px 0 70px 0'
       }
