@@ -180,7 +180,9 @@ span {
   display: flex;
   justify-content: flex-start;
 }
-
+.sign-up-container {
+  display: none;
+}
 /* .showError {
   margin-top: 0.2rem !important;
   margin-left: 10rem;
