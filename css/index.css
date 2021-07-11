@@ -235,4 +235,11 @@ span {
     font-size: 18px;
     cursor: pointer;
   }
+  .sign-up-container{
+      display: none;
+  }
+
+  
+
+
 }
