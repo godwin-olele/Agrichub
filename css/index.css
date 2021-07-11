@@ -133,7 +133,7 @@ header {
 .terms {
   text-align: left;
   width: 60%;
-  margin: 1em auto 3em auto;
+  margin: 1em auto 2em auto;
 }
 
 span {
@@ -165,6 +165,25 @@ span {
   margin-left: 140px;
   margin-top: 5px;
 }
+
+#nameError,
+#emailError,
+#passwordError {
+  margin-top: 0.2rem !important;
+  margin-left: 10rem;
+  color: #e74c3c;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* .showError {
+  margin-top: 0.2rem !important;
+  margin-left: 10rem;
+  color: #e74c3c;
+  display: block;
+  display: flex;
+  justify-content: flex-start;
+} */
 
 @media screen and (max-width: 768px) {
   header {

@@ -55,15 +55,23 @@
             </div>
             <div class="or-register">or use your email for registration:</div>
             <form>
-                <input type="text" name="name" id="name" placeholder="Name"><br><br>
-                <input type="email" name="email" id="email" placeholder="Email"><br><br>
-                <input type="password" name="password" id="password" placeholder="Password"><br><br>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <br>
+                <span id="nameError"></span>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <br>
+                <span id="emailError"></span>
+                <br>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <br>
+                <span id="passwordError"></span>
                 <div class="terms-container">
                     <input type="checkbox" id="checkBox">
                     <div class="terms">I agree to the <span>Terms</span> and <span>Privacy Policy</span>.</div>
                 </div>
                 <div class="buttons">
-                    <button class="sign-up" type="submit">Sign Up</button>
+                    <button class="sign-up" id="signUp" type="submit">Sign Up</button>
                     <button class="sign-in" type="submit">Sign In</button>
                 </div>
             </form>
