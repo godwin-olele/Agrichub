@@ -28,7 +28,7 @@ signupBtn.addEventListener("click", function(){
         height: '470px',
         padding: '20px 30px',
         backgroundColor: '#fff',
-        borderRadius: '70px 0 70px 0'
+        borderRadius: '80px 0 0 0'
       }
       
       Object.assign(signUpZone.style, styles);

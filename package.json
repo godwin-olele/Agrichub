@@ -31,7 +31,8 @@
     "mustache": "^4.2.0",
     "npm": "^7.11.2",
     "passport": "^0.4.1",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "scrollreveal": "^4.0.9"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
