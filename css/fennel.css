@@ -1,0 +1,350 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #d0daee;
+}
+
+.container {
+  width: 100%;
+  max-width: 117rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.menu-icons {
+  color: #000;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1500;
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+  /*border-bottom: 1px solid rgba(0, 0, 0, 0.1);*/
+  position: relative;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 0.5rem 1.3rem;
+  display: inline-block;
+  letter-spacing: 0.2rem;
+  border-radius: 5rem;
+  margin-right: 10rem;
+  /*width: 5rem;
+	height: 5rem;
+	background-color: #eb3007;
+	display: flex;
+	border-radius: 100%;
+	margin-right: 5rem;*/
+}
+
+.logo .agricul {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 0.5rem 0 0.5rem 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  color: rgba(0, 0, 0, 0.733);
+}
+
+.logo .hub {
+  /*background: rgba( 0, 0, 0, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+	padding: 0.5rem 1rem 0.5rem 0;
+	border-top-right-radius: 2rem;
+	border-bottom-right-radius: 2rem;*/
+  color: #ff7300;
+}
+
+.nav-list {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.nav-list li {
+  line-height: 8rem;
+  position: relative;
+}
+
+.sub-menu li {
+  line-height: 4rem;
+}
+
+.nav-list a {
+  display: block;
+  color: #000;
+  padding: 0 1.5rem;
+  font-size: 1.7rem;
+  /*text-transform: uppercase;*/
+  transition: color 650ms;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-list a:hover {
+  color: #ff7300;
+}
+
+.btn {
+  color: rgba(0, 0, 0, 0.733);
+  padding: 1.3rem;
+  display: inline-block;
+  /*background-color: #ff8303;
+    border: 2px solid #ff8303;
+	border-radius: 5rem;*/
+  /*background: rgba( 0, 0, 0, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );*/
+  border-radius: 5rem;
+  border: 2px solid #ff7300;
+  transition: background-color 550ms;
+}
+.btn:hover {
+  color: #ff7300;
+  background-color: transparent;
+}
+
+.sub-menu {
+  width: 20rem;
+  display: block;
+  position: absolute;
+  border-top: 3px solid #ff7300;
+  background-color: #191919;
+  z-index: 100;
+  top: 16rem;
+  transition: all 650ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sub-menu::before {
+  content: "";
+  position: absolute;
+  top: -2.5rem;
+  left: 3rem;
+  border: 1.2rem solid transparent;
+  border-bottom-color: #ff7300;
+}
+
+.sub-menu .sub-menu::before {
+  top: 0.9rem;
+  left: -2.5rem;
+  border: 1.2rem solid transparent;
+  border-right-color: #ff7300;
+}
+
+.sub-menu .sub-menu {
+  border-top: none;
+  border-left: 3px solid #ff7300;
+  top: 0;
+  left: 160%;
+}
+
+.nav-list li:hover > .sub-menu {
+  top: 8rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-menu li:hover > .sub-menu {
+  top: 0;
+  left: 100%;
+}
+
+li.move-right {
+  margin: auto 0 auto auto;
+  line-height: initial;
+}
+.move-right a {
+  color: #ff7300;
+}
+
+/* Vagetable crop */
+.overlay {
+  background: rgba(0, 0, 0, 0.65);
+  height: 20rem;
+  width: 100%;
+  position: relative;
+}
+
+.fennel-intro {
+  color: #fff;
+  background: #ff7300;
+  height: 20rem;
+  margin-top: 3rem;
+  width: 100%;
+  background-image: url("/images/fennel-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fennel-intro .fennel-header {
+  font-size: 5rem;
+  position: absolute;
+  left: 13.5rem;
+  padding-top: 2rem;
+}
+
+.fennel-intro .fennel-text {
+  position: absolute;
+  left: 13.7rem;
+  top: 10rem;
+  font-size: 20px;
+  width: 70%;
+  color: rgb(226, 226, 226);
+}
+
+main {
+  position: absolute;
+  top: 31rem;
+  border: 2px solid #000;
+  width: 100%;
+  height: 4200vh;
+}
+
+.fennel-container {
+  /*border: 2px solid red;*/
+  width: 60%;
+  height: auto;
+  position: relative;
+  top: 4rem;
+  /*left: 13.7rem;*/
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+.fennel-container p {
+  font-size: 17.5px;
+  text-align: start;
+  line-height: 2.7rem;
+  color: rgb(51, 51, 51);
+}
+
+.fennel-container ol {
+  font-size: 17.5px;
+  margin-top: 3.5rem;
+  margin-bottom: 4rem;
+  position: relative;
+  left: 4rem;
+  line-height: 2.7rem;
+}
+
+.fennel-container h3 {
+  font-size: 2.3rem;
+  margin: 4rem 0;
+  color: #325781;
+}
+.fennel-container h1 {
+  font-size: 3rem;
+  margin: 4rem 0;
+}
+
+.fennel-container .fennel-img {
+  background-image: url("/images/fennel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  margin: 3rem 0;
+}
+
+.fennel-container .planting-img {
+  background-image: url("/images/fennel-planting.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  margin: 3rem 0;
+}
+
+.fennel-container .site-img {
+  background-image: url("/images/fennel-site.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  margin: 3rem 0;
+}
+
+.fennel-container .water-img {
+  background-image: url("/images/fennel-watering.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  margin: 3rem 0;
+}
+
+.fennel-container .disease-img {
+  background-image: url("/images/fennel-disease.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  margin: 3rem 0;
+}
+
+.fennel-container .harvest-img {
+  background-image: url("/images/fennel-harvesting.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  margin: 3rem 0;
+}
