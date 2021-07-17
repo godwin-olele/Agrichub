@@ -214,26 +214,26 @@ li.move-right {
   position: relative;
 }
 
-.cabbage-intro {
+.celeriac-intro {
   color: #fff;
   background: #ff7300;
   height: 20rem;
   margin-top: 3rem;
   width: 100%;
-  background-image: url("/images/cabbage.jpg");
+  background-image: url("/images/celeriac-banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.cabbage-intro .cabbage-header {
+.celeriac-intro .celeriac-header {
   font-size: 5rem;
   position: absolute;
   left: 13.5rem;
   padding-top: 2rem;
 }
 
-.cabbage-intro .cabbage-text {
+.celeriac-intro .celeriac-text {
   position: absolute;
   left: 13.7rem;
   top: 10rem;
@@ -250,7 +250,7 @@ main {
   height: 4200vh;
 }
 
-.cabbage-container {
+.celeriac-container {
   /*border: 2px solid red;*/
   width: 60%;
   height: auto;
@@ -261,14 +261,14 @@ main {
   padding: 5rem;
 }
 
-.cabbage-container p {
+.celeriac-container p {
   font-size: 17.5px;
   text-align: start;
   line-height: 2.7rem;
   color: rgb(51, 51, 51);
 }
 
-.cabbage-container ol {
+.celeriac-container ol {
   font-size: 17.5px;
   margin-top: 3.5rem;
   margin-bottom: 4rem;
@@ -277,18 +277,18 @@ main {
   line-height: 2.7rem;
 }
 
-.cabbage-container h3 {
+.celeriac-container h3 {
   font-size: 2.3rem;
   margin: 4rem 0;
   color: #325781;
 }
-.cabbage-container h1 {
+.celeriac-container h1 {
   font-size: 3rem;
   margin: 4rem 0;
 }
 
-.cabbage-container .cabbage-img {
-  background-image: url("/images/purple-cabbage.jpg");
+.celeriac-container .celeriac-img {
+  background-image: url("/images/celeric.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -297,8 +297,8 @@ main {
   margin: 3rem 0;
 }
 
-.cabbage-container .planting-img {
-  background-image: url("/images/planting-cabbage.jpg");
+.celeriac-container .planting-img {
+  background-image: url("/images/celeriac-planting.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -307,8 +307,8 @@ main {
   margin: 3rem 0;
 }
 
-.cabbage-container .site-img {
-  background-image: url("/images/cabbage-plants.jpg");
+.celeriac-container .site-img {
+  background-image: url("/images/celeriac-site.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -317,8 +317,8 @@ main {
   margin: 3rem 0;
 }
 
-.cabbage-container .container-img {
-  background-image: url("/images/cabbage-container.jpg");
+.celeriac-container .container-img {
+  background-image: url("/images/celeriac-container.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -327,8 +327,8 @@ main {
   margin: 3rem 0;
 }
 
-.cabbage-container .carring-img {
-  background-image: url("/images/carring-cabbage.jpg");
+.celeriac-container .harvest-img {
+  background-image: url("/images/celeriac-harvesting.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -337,18 +337,8 @@ main {
   margin: 3rem 0;
 }
 
-.cabbage-container .disease-img {
-  background-image: url("/images/cabbage-disease.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 400px;
-  margin: 3rem 0;
-}
-
-.cabbage-container .pests-img {
-  background-image: url("/images/cabbage-pests.jpg");
+.celeriac-container .carring-img {
+  background-image: url("/images/celeriac-carring.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
