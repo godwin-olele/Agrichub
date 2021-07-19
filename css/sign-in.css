@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -162,7 +162,11 @@ span {
   justify-content: flex-start;
 } */
 
-@media screen and (max-width: 768px) {
+.mobile-sign-in-form  {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
   header {
     height: 100vh;
   }
@@ -281,6 +285,7 @@ span {
     text-align: center;
     padding: 0 50px;
     border-radius: 40px 40px 0 0;
+    display: block;
   }
   .mobile-sign-in-form h1 {
     letter-spacing: 2px;
@@ -325,6 +330,172 @@ span {
 }
 
   
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 989px) {
+  header {
+    height: 100vh;
+  }
+  .brand-name {
+    text-align: center;
+    margin-top: 1.5em;
+    position: absolute;
+    font-size: 16px;
+    left: 2em;
+    color: white;
+  }
+  .left-container {
+    width: 100%;
+    background-color: #ee5522;
+    background-image: url("https://images.pexels.com/photos/5561310/pexels-photo-5561310.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  .left-container .illustration {
+    display: none;
+  }
+  .right-container {
+    display: none;
+  }
+  .intro {
+    width: 90%;
+    height: auto;
+    margin: 7em auto 0 auto;
+  }
+  .intro p {
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.842);
+  }
+  .intro h1 {
+    color: #fff;
+    font-size: 30px;
+  }
+  .buttons-mobile {
+    /*border: 2px solid #000;*/
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  .buttons-mobile .sign-up-mobile {
+    padding: 15px;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    background-color: #189e45;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .buttons-mobile .sign-in-mobile {
+    padding: 15px;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    color: #189e45;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .sign-up-container {
+    display: none;
+  }
+  .sign-up-header {
+    text-align: center;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.733);
+  }
+  .sign-up-container form {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .sign-up-container form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    border-bottom-color: rgba(226, 226, 226, 0.438);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+  .sign-up-container .sign_up {
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #189e45;
+    border: none;
+    outline: none;
+    color: #fff;
+  }
+  .sign-up-container .sign_in {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .mobile-sign-in-form {
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 550px;
+    text-align: center;
+    padding: 0 50px;
+    border-radius: 40px 40px 0 0;
+    display: block;
+  }
+  .mobile-sign-in-form h1 {
+    letter-spacing: 2px;
+    margin-top: 2em;
+    color: #303D1D;
+    font-size: 35px;
+  }
+  .mobile-sign-in-form form {
+    margin-top: 3.5em;
+  }
+  .mobile-sign-in-form input {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    width: 70%;
+    padding: 10px;
+    font-size: 22px;
+    outline: none;
+    border-bottom: 1px solid #5d823334;
+    color: rgb(29, 29, 29);
+  }
+  .mobile-sign-in-form .buttons {
+    margin-top: 6em;
+  }
+  .mobile-sign-in-form .sign-in {
+    padding: 10px 50px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #303D1D;
+    letter-spacing: 2px;
+  }
+  .mobile-sign-in-form .sign-up {
+    border-radius: 50px;
+    color: #303D1D;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+  }
+}
 
   
 
