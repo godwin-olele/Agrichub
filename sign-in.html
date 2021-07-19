@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/sign-in.css">
 </head>
 
@@ -27,11 +27,29 @@
                 <h1>Agric<span>Hub.</span></h1>
             </div>
             
+            <div class="mobile-sign-in-form">
+                <h1>Sign in your Account</h1>
+            <form>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <br>
+                <span id="emailError"></span>
+                <br>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <br>
+                <span id="passwordError"></span>
+
+
+                <div class="buttons">
+                    <a href="#" class="sign-in" type="submit">Sign In</a><br><br><br>
+                    <a href="#" class="sign-up" id="signUp" type="submit">Create Account</a>
+                </div>
+            </form>
+            </div>
             
-            <div class="buttons-mobile" id="buttons-mobile">
+           <!-- <div class="buttons-mobile" id="buttons-mobile">
                 <button class="sign-up-mobile" type="submit" id="signup-Btn">Sign Up</button><br><br>
                 <button class="sign-in-mobile" type="submit">I have an account</button>
-            </div>
+            </div>-->
             <div class="illustration">
                 <img src="/images/undraw_unlock_24mb.svg" alt="svg-illustration">
             </div>
