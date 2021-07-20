@@ -166,6 +166,58 @@ span {
   display: none;
 }
 
+/* Remember me & Forgot Password link */
+
+.sign-in-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1em auto;
+}
+
+.remember-me-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remember-me-wrap p{
+  margin-left: .25em;
+}
+
+.radio-custom{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #5D8233;
+  border-radius: 100%;
+}
+
+.radio-custom:active{
+  background: rgba(138, 138, 138, 0.7);
+}
+
+.forgot-password-link-wrap a{
+  color: #000;
+}
+
+.forgot-password-link-wrap a:hover{
+  color: #5D8233;
+}
+
+/* Remember me & Forgot Password link End */
+
+/* Allows sign-in-wrap to be one column on small displays */
+@media screen and (max-width: 351px) {
+  .sign-in-wrap{
+    flex-direction: column;
+  }
+  .forgot-password-link-wrap{
+    margin-top: 1em;
+  }
+}
+
 @media screen and (max-width: 767px) {
   header {
     height: 100vh;
@@ -208,6 +260,7 @@ span {
     color: #fff;
     font-size: 30px;
   }
+
   .buttons-mobile {
     /*border: 2px solid #000;*/
     margin: 0 auto;
@@ -494,6 +547,16 @@ span {
     font-weight: 600;
     font-size: 18px;
     cursor: pointer;
+  }
+  .sign-in-wrap{
+    width: 70%;
+  }
+}
+
+/* Resizes at breakpoint .sign-in-wrap to match width of form */
+@media screen and (min-width: 991px) {
+  .sign-in-wrap{
+    width: 60%;
   }
 }
 
