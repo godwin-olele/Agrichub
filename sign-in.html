@@ -16,7 +16,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/sign-in.css">
+    <link rel="stylesheet" href="css/sign-in.css">
 </head>
 
 <body>
@@ -38,10 +38,29 @@
                 <br>
                 <span id="passwordError"></span>
 
+                
+                <!-- Remember me & Forgot Password link -->
+                <div class='sign-in-wrap'>
+
+                    <div class='remember-me-wrap'>
+
+                     <div class='radio-custom'></div>
+
+                     <p>Remember me</p>
+
+                    </div>
+
+                    <div class='forgot-password-link-wrap'>
+                        <a href='#' alt='Forgot Password Link' title='Forgot Password Link'>Forgot password?</a>
+                    </div>
+
+                </div>
+                <!-- Remember me & Forgot Password link End -->
 
                 <div class="buttons">
-                    <a href="#" class="sign-in" type="submit">Sign In</a><br><br><br><br>
-                    <a href="#" class="sign-up" id="signUp" type="submit">Create Account</a>
+                    <a href="#" class="sign-in" type="submit">Sign In</a>
+                    <br><br><br>
+                    <a href="./index.html" class="sign-up" id="signUp" type="submit">Create Account</a>
                 </div>
             </form>
             </div>
@@ -55,7 +74,7 @@
             </div>
         </div>
         <div class="right-container">
-            <h2 class="welcome-text">Hi, Welcome back</>
+            <h2 class="welcome-text">Welcome back</>
             <h1>Sign in your Account</h1>
             <form>
                 <input type="email" name="email" id="email" placeholder="Email">
@@ -67,13 +86,31 @@
                 <span id="passwordError"></span>
 
 
+                 <!-- Remember me & Forgot Password link -->
+                 <div class='sign-in-wrap'>
+
+                    <div class='remember-me-wrap'>
+
+                     <div class='radio-custom'></div>
+
+                     <p>Remember me</p>
+
+                    </div>
+
+                    <div class='forgot-password-link-wrap'>
+                        <a href='#' alt='Forgot Password Link' title='Forgot Password Link'>Forgot password?</a>
+                    </div>
+
+                </div>
+                <!-- Remember me & Forgot Password link End -->
+
                 <div class="buttons">
-                    <button class="sign-in" type="submit">Sign In</button><br>
-                    <button class="sign-up" id="signUp" type="submit">Create Account</button>
+                    <a href="#" class="sign-in" >Sign In</a><br><br><br><br>
+                    <a href="./index.html" class="sign-up" id="signUp" type="submit">Create Account</a>
                 </div>
             </form>
 
-            <p class="forgot-password">Forgot Password?</p>
+        
         </div>
 
     </header>
@@ -84,27 +121,7 @@
 
 
 
-        
-        <div class="sign-up-container" id="sign-up-container">
-            <h1 class="sign-up-header">Sign Up</h1>
-            <form>
-                <input type="text" name="name" id="name" placeholder="Name">
-                <br>
-                <span id="nameError"></span>
-                <br>
-                <input type="email" name="email" id="email" placeholder="Email">
-                <br>
-                <span id="emailError"></span>
-                <br>
-                <input type="password" name="password" id="password" placeholder="Password">
-                <br>
-                <span id="passwordError"></span>
-            </form>
-
-            <button class="sign_up">Sign Up</button>
-
-            <p class="sign_in">Already have an account ? <a href="./sign-in.html">Sign In</a></p>
-        </div>
+     
     
     </header>
 

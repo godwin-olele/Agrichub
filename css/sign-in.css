@@ -57,7 +57,7 @@ header {
 }
 .right-container h1 {
   text-align: center;
-  color: #5D8233;
+  color: #303D1D;
   margin-bottom: 1em;
   margin-top: 4em;
   font-size: 30px;
@@ -78,40 +78,33 @@ header {
   color: rgb(29, 29, 29);
 }
 .right-container form .buttons {
-  margin: 3em auto 0 auto;
+  margin: 4em auto 0 auto;
   width: 60%;
 }
 .right-container form .sign-up {
   padding: 15px 65px;
   border-radius: 100px;
   border: none;
-  color: #5D8233;
+  color: #303D1D;
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 2em;
 }
 .right-container form .sign-in {
   border: none;
-  padding: 18px 65px;
+  padding: 18px 80px;
   border-radius: 100px;
-  background-color: #5D8233;
+  background-color: #303D1D;
   color: #ffffff;
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
-}
-.forgot-password {
-  border-bottom: 2px solid #000;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 5em;
-  margin-bottom: 5em;
+  text-decoration: none;
+
 }
 
 span {
-  color: #5D8233;
+  color: #303D1D;
 }
 
 .buttons-mobile {
@@ -164,6 +157,58 @@ span {
 
 .mobile-sign-in-form  {
   display: none;
+}
+
+/* Remember me & Forgot Password link */
+
+.sign-in-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1em auto;
+}
+
+.remember-me-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remember-me-wrap p{
+  margin-left: .25em;
+}
+
+.radio-custom{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #303D1D;
+  border-radius: 100%;
+}
+
+.radio-custom:active{
+  background: rgba(138, 138, 138, 0.7);
+}
+
+.forgot-password-link-wrap a{
+  color: #000;
+}
+
+.forgot-password-link-wrap a:hover{
+  color: #303D1D;
+}
+
+/* Remember me & Forgot Password link End */
+
+/* Allows sign-in-wrap to be one column on small displays */
+@media screen and (max-width: 351px) {
+  .sign-in-wrap{
+    flex-direction: column;
+  }
+  .forgot-password-link-wrap{
+    margin-top: 1em;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -220,7 +265,7 @@ span {
     width: 80%;
     border-radius: 10px;
     border: none;
-    background-color: #189e45;
+    background-color: #303D1D;
     color: #fff;
     font-weight: 600;
     font-size: 18px;
@@ -232,7 +277,7 @@ span {
     border-radius: 10px;
     border: none;
     background-color: #ffffff;
-    color: #189e45;
+    color: #303D1D;
     font-weight: 600;
     font-size: 18px;
     cursor: pointer;
@@ -266,7 +311,7 @@ span {
     font-weight: bold;
     margin-top: 30px;
     border-radius: 10px;
-    background-color: #189e45;
+    background-color: #303D1D;
     border: none;
     outline: none;
     color: #fff;
@@ -308,28 +353,36 @@ span {
     color: rgb(29, 29, 29);
   }
   .mobile-sign-in-form .buttons {
-    margin-top: 6em;
+    margin-top: 3.5em;
   }
   .mobile-sign-in-form .sign-in {
-    padding: 10px 50px;
-    font-size: 18px;
-    font-weight: 500;
+    padding: 15px 80px;
+    width: 80%;
     border-radius: 50px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+    border: none;
     background-color: #303D1D;
-    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
   }
   .mobile-sign-in-form .sign-up {
     border-radius: 50px;
     color: #303D1D;
-    font-weight: 600;
     font-size: 18px;
     cursor: pointer;
+    margin-top: 2em;
   }
+  
 }
 
-  
+/* Resizes at breakpoint .sign-in-wrap to match width of form */
+@media screen and (min-width: 991px) {
+  .sign-in-wrap{
+    width: 60%;
+  }
+}
 
 
 
@@ -388,7 +441,7 @@ span {
     width: 80%;
     border-radius: 10px;
     border: none;
-    background-color: #189e45;
+    background-color: #303D1D;
     color: #fff;
     font-weight: 600;
     font-size: 18px;
@@ -400,7 +453,7 @@ span {
     border-radius: 10px;
     border: none;
     background-color: #ffffff;
-    color: #189e45;
+    color: #303D1D;
     font-weight: 600;
     font-size: 18px;
     cursor: pointer;
@@ -434,7 +487,7 @@ span {
     font-weight: bold;
     margin-top: 30px;
     border-radius: 10px;
-    background-color: #189e45;
+    background-color: #303D1D;
     border: none;
     outline: none;
     color: #fff;
