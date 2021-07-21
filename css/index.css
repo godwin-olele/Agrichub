@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Quicksand';
 }
 
 header {
@@ -164,6 +164,7 @@ span {
   color: #fff;
   font-size: 30px;
   /*margin-bottom: 30px;*/
+
 }
 #checkBox {
   float: left;
@@ -233,6 +234,7 @@ span {
   .intro h1 {
     color: #fff;
     font-size: 30px;
+    margin-left: 0.3em;
   }
   .buttons-mobile {
     /*border: 2px solid #000;*/
