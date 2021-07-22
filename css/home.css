@@ -41,19 +41,10 @@ header {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-image: url("https://images.pexels.com/photos/3377332/pexels-photo-3377332.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-image: url("/images/home-page-header-img.jpeg");
 	background-position: initial;
 	background-size: cover;
 	background-repeat: no-repeat;
-}
-
-.footer {
-  position:fixed;
-  bottom:0;
-  left:0;
-  width:100%;
-  height: 90px;
-  background-color: #D0DAEE;
 }
 
 .container {
@@ -91,7 +82,7 @@ nav {
 	display: inline-block;
 	letter-spacing: 0.2rem;
 	border-radius: 5rem;
-	margin-right: 10rem;
+	margin-right: 40rem;
     font-family: 'Balsamiq Sans', cursive;
 	/*width: 5rem;
 	height: 5rem;
@@ -252,6 +243,14 @@ li.move-right {
 }
 
 
+.main-section {
+	border: 2px solid rgb(255, 0, 0);
+	width: 380px;
+	height: 70vh;
+	margin-top: 10em;
+}
+
+
 
 @media screen and (max-width: 850px){
 	.nav-list {
@@ -316,10 +315,6 @@ li.move-right {
 		display: flex;
 	}
 }
-
-
-
-
 
 
 
