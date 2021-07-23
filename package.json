@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Godwindaniel10/farmer_hub#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "bcrypt": "^5.0.1",
     "connect-flash": "^0.1.1",
     "consolidate": "^0.16.0",
