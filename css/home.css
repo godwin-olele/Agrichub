@@ -638,10 +638,21 @@ main {
 
 
 /* footer */
-footer {
+.footer {
 	background-color: #F67F05;
 	width: 100%;
 	height: 300px;
+	left: 0;
+	position: absolute;
+	
+	
+}
+.footer::before {
+	content: '';
+	background: linear-gradient(to top, #F67F05, #fff);
+	height: 50px;
+	width: 100%;
+	position: absolute;
 }
 
 @media screen and (max-width: 850px){
